@@ -88,6 +88,5 @@ class Dashboard extends CI_Controller {
 			$this->load->view('user/diagnosa/index', $data);
 		}
 	}
-
 }
 ?>
