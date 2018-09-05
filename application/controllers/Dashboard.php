@@ -33,16 +33,17 @@ class Dashboard extends CI_Controller {
 		$this->load->view('user/login');
 	}
 
-	public function riwayat(){
-		$id = $this->session->userdata('id_user');
+	// public function riwayat(){
+	// 	$id = $this->session->userdata('id_user');
 
-		$data['listHasil'] = $this->History_model->listHasil($id);
-		$this->load->view('user/diagnosa/riwayat');
+	// 	$data['listHasil'] = $this->History_model->listHasil($id);
+	// 	$this->load->view('user/diagnosa/riwayat');
 
-	}
+	// }
 
 	public function diagnosa()
 	{
+		$user_login = $this->session->userdata('id_user');
 		if($this->session->userdata('is_login') == FALSE){redirect('login_user');}
 
 		if (!$this->input->post('gejala')) {
@@ -82,7 +83,8 @@ class Dashboard extends CI_Controller {
 										'kepercayaan'=>$combineCFmb*100,
 										'hasilcf'=>$combinehasil*100,
 										'tidakpercaya'=>$combineCFmd*100,
-										'keterangan'=>$value->keterangan);
+										'keterangan'=>$value->keterangan,
+										'id_user'=>$user_login);
 					$i++;
 				}
 			}
@@ -93,13 +95,13 @@ class Dashboard extends CI_Controller {
 			}
 			usort($penyakit, "cmp");
 			$data["listPenyakit"] = $penyakit;
-			// $data_hasil = array(
-			// 	'id_penyakit'=>$penyakit[0]['id_penyakit'],
-			// 	'nama_penyakit'=>$penyakit[0]['nama_penyakit'],
-			// 	'kepercayaan'=>$penyakit[0]['kepercayaan'],
-			// 	'id_user'=>$penyakit[0]['id_user'],
-			// );
-			// $this->db->insert('tb_hasilcf', $data_hasil);
+			$data_hasil = array(
+				'id_user'=>$penyakit[0]['id_user'],
+				'kd_penyakit'=>$penyakit[0]['kd_penyakit'],
+				'nama'=>$penyakit[0]['nama'],
+				'kepercayaan'=>$penyakit[0]['kepercayaan'],
+			);
+			$this->db->insert('tb_hasilcf', $data_hasil);
 
 			$this->load->view('user/diagnosa/index', $data);
 		}
