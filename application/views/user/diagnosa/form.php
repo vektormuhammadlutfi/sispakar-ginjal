@@ -27,6 +27,7 @@
     <div class="row d-flex justify-content-center">
       <div class="col-md-6" style="float: left; padding-bottom: 5%;">
         <button type="submit" name="submit" class="btn main-btn" style="background-color: #41C1FF;  color: #ffffff;">Proses CF</button>
+        <button type="submit" name="submit" class="btn main-btn" style="background-color: #41C1FF;  color: #ffffff;">Proses DS</button>
       </div>
     </div>
   </div>

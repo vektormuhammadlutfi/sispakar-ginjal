@@ -10,7 +10,7 @@ class Hasil_cf extends CI_Controller {
 	}
 	public function index(){
 		$data['contents'] = 'admin/hasil_cf'; 
-		$data['kelompok_data'] = $this->Hasil_model->get_hasilcf();
+		$data['kelompok_data'] = $this->Hasil_model->daftarHasil();
 		$this->load->view('templates/index', $data);
 	}
 

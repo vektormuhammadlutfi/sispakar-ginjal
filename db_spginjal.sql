@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 09, 2018 at 10:25 AM
--- Server version: 10.1.32-MariaDB
--- PHP Version: 7.2.5
+-- Waktu pembuatan: 05 Sep 2018 pada 01.49
+-- Versi server: 10.1.32-MariaDB
+-- Versi PHP: 7.2.5
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -25,7 +25,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tb_gejala`
+-- Struktur dari tabel `tb_gejala`
 --
 
 CREATE TABLE `tb_gejala` (
@@ -36,7 +36,7 @@ CREATE TABLE `tb_gejala` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `tb_gejala`
+-- Dumping data untuk tabel `tb_gejala`
 --
 
 INSERT INTO `tb_gejala` (`id`, `id_klp_gejala`, `kd_gejala`, `nama_gejala`) VALUES
@@ -74,49 +74,37 @@ INSERT INTO `tb_gejala` (`id`, `id_klp_gejala`, `kd_gejala`, `nama_gejala`) VALU
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tb_hasilcf`
+-- Struktur dari tabel `tb_hasilcf`
 --
 
 CREATE TABLE `tb_hasilcf` (
   `id_hasilcf` int(11) NOT NULL,
   `id_user` int(11) NOT NULL,
   `id_penyakit` int(11) NOT NULL,
-  `tanggal` date NOT NULL,
-  `nilaicf` float NOT NULL
+  `nama_penyakit` varchar(50) NOT NULL,
+  `kepercayaan` float NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `tb_hasilcf`
---
-
-INSERT INTO `tb_hasilcf` (`id_hasilcf`, `id_user`, `id_penyakit`, `tanggal`, `nilaicf`) VALUES
-(1, 6, 2, '2018-08-09', 0.9);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tb_hasilds`
+-- Struktur dari tabel `tb_hasilds`
 --
 
 CREATE TABLE `tb_hasilds` (
   `id_hasilds` int(11) NOT NULL,
   `id_user` int(11) NOT NULL,
   `id_penyakit` int(11) NOT NULL,
-  `tanggal` date NOT NULL,
-  `nilaids` float NOT NULL
+  `nama_penyakit` varchar(50) NOT NULL,
+  `densitas` float NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `tb_hasilds`
---
-
-INSERT INTO `tb_hasilds` (`id_hasilds`, `id_user`, `id_penyakit`, `tanggal`, `nilaids`) VALUES
-(1, 6, 5, '2018-08-09', 0.95);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tb_hitungds`
+-- Struktur dari tabel `tb_hitungds`
 --
 
 CREATE TABLE `tb_hitungds` (
@@ -130,7 +118,7 @@ CREATE TABLE `tb_hitungds` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tb_klp_gejala`
+-- Struktur dari tabel `tb_klp_gejala`
 --
 
 CREATE TABLE `tb_klp_gejala` (
@@ -140,7 +128,7 @@ CREATE TABLE `tb_klp_gejala` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `tb_klp_gejala`
+-- Dumping data untuk tabel `tb_klp_gejala`
 --
 
 INSERT INTO `tb_klp_gejala` (`id_klp_gejala`, `nama`, `keterangan`) VALUES
@@ -150,7 +138,7 @@ INSERT INTO `tb_klp_gejala` (`id_klp_gejala`, `nama`, `keterangan`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tb_penyakit`
+-- Struktur dari tabel `tb_penyakit`
 --
 
 CREATE TABLE `tb_penyakit` (
@@ -161,7 +149,7 @@ CREATE TABLE `tb_penyakit` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `tb_penyakit`
+-- Dumping data untuk tabel `tb_penyakit`
 --
 
 INSERT INTO `tb_penyakit` (`id_p`, `kd_penyakit`, `nama`, `keterangan`) VALUES
@@ -175,7 +163,7 @@ INSERT INTO `tb_penyakit` (`id_p`, `kd_penyakit`, `nama`, `keterangan`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tb_rulecf`
+-- Struktur dari tabel `tb_rulecf`
 --
 
 CREATE TABLE `tb_rulecf` (
@@ -187,7 +175,7 @@ CREATE TABLE `tb_rulecf` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `tb_rulecf`
+-- Dumping data untuk tabel `tb_rulecf`
 --
 
 INSERT INTO `tb_rulecf` (`id`, `id_gejala`, `id_penyakit`, `mb`, `md`) VALUES
@@ -235,7 +223,7 @@ INSERT INTO `tb_rulecf` (`id`, `id_gejala`, `id_penyakit`, `mb`, `md`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tb_ruleds`
+-- Struktur dari tabel `tb_ruleds`
 --
 
 CREATE TABLE `tb_ruleds` (
@@ -246,7 +234,7 @@ CREATE TABLE `tb_ruleds` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `tb_ruleds`
+-- Dumping data untuk tabel `tb_ruleds`
 --
 
 INSERT INTO `tb_ruleds` (`id`, `id_gejala`, `id_penyakit`, `bobot`) VALUES
@@ -294,7 +282,7 @@ INSERT INTO `tb_ruleds` (`id`, `id_gejala`, `id_penyakit`, `bobot`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tb_user`
+-- Struktur dari tabel `tb_user`
 --
 
 CREATE TABLE `tb_user` (
@@ -309,32 +297,26 @@ CREATE TABLE `tb_user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `tb_user`
+-- Dumping data untuk tabel `tb_user`
 --
 
 INSERT INTO `tb_user` (`id`, `nama_pengguna`, `jk`, `umur`, `email`, `username`, `password`, `level`) VALUES
 (1, 'nani astuti triana', 'P', '22', 'admin@gmail.com', 'admin', '21232f297a57a5a743894a0e4a801fc3', 'admin'),
-(6, 'mila', 'P', '16', 'mila@gmail.com', 'mila', 'f562f7f28a039094f7b602c033f106a4', 'pasien'),
-(8, 'admin3', 'P', '22', 'mila@gmail.com', 'admin3', 'fe3a0eada6dae0fbcf04f4968076b3e1', 'pasien'),
-(9, 'hasriani', 'P', '23', 'hasriani@gmail.com', 'hasriani', 'dc16507419d4f99dd2c9c4eac3197935', 'pasien'),
-(10, 'hasriani', 'P', '23', 'hasriani@gmail.com', 'hasriani', 'dc16507419d4f99dd2c9c4eac3197935', 'pasien'),
-(11, 'hasrianiq', 'L', '22', 'hasriani@gmail.com', 'hasriani', '25d55ad283aa400af464c76d713c07ad', 'pasien'),
-(12, 'hardianti', 'L', '23', 'hardianti@gmail.com', 'hardianti', '3843a08b3283e5603449b42a746ac973', 'pasien'),
-(13, 'hardianti anti', 'P', '22', 'hardianti@gmail.com', 'hardiantianti', 'face3d7fe9fdcc4ee855b7759be18ea0', 'pasien');
+(6, 'mila', 'P', '16', 'mila@gmail.com', 'mila', 'f562f7f28a039094f7b602c033f106a4', 'pasien');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `tb_gejala`
+-- Indeks untuk tabel `tb_gejala`
 --
 ALTER TABLE `tb_gejala`
   ADD PRIMARY KEY (`id`),
   ADD KEY `id_klp_gejala` (`id_klp_gejala`);
 
 --
--- Indexes for table `tb_hasilcf`
+-- Indeks untuk tabel `tb_hasilcf`
 --
 ALTER TABLE `tb_hasilcf`
   ADD PRIMARY KEY (`id_hasilcf`),
@@ -342,7 +324,7 @@ ALTER TABLE `tb_hasilcf`
   ADD KEY `tb_hasilcf_ibfk_1` (`id_user`);
 
 --
--- Indexes for table `tb_hasilds`
+-- Indeks untuk tabel `tb_hasilds`
 --
 ALTER TABLE `tb_hasilds`
   ADD PRIMARY KEY (`id_hasilds`),
@@ -350,25 +332,25 @@ ALTER TABLE `tb_hasilds`
   ADD KEY `tb_hasilds_ibfk_1` (`id_user`);
 
 --
--- Indexes for table `tb_hitungds`
+-- Indeks untuk tabel `tb_hitungds`
 --
 ALTER TABLE `tb_hitungds`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `tb_klp_gejala`
+-- Indeks untuk tabel `tb_klp_gejala`
 --
 ALTER TABLE `tb_klp_gejala`
   ADD PRIMARY KEY (`id_klp_gejala`);
 
 --
--- Indexes for table `tb_penyakit`
+-- Indeks untuk tabel `tb_penyakit`
 --
 ALTER TABLE `tb_penyakit`
   ADD PRIMARY KEY (`id_p`);
 
 --
--- Indexes for table `tb_rulecf`
+-- Indeks untuk tabel `tb_rulecf`
 --
 ALTER TABLE `tb_rulecf`
   ADD PRIMARY KEY (`id`),
@@ -376,7 +358,7 @@ ALTER TABLE `tb_rulecf`
   ADD KEY `id_penyakit` (`id_penyakit`);
 
 --
--- Indexes for table `tb_ruleds`
+-- Indeks untuk tabel `tb_ruleds`
 --
 ALTER TABLE `tb_ruleds`
   ADD PRIMARY KEY (`id`),
@@ -384,102 +366,102 @@ ALTER TABLE `tb_ruleds`
   ADD KEY `id_penyakit` (`id_penyakit`);
 
 --
--- Indexes for table `tb_user`
+-- Indeks untuk tabel `tb_user`
 --
 ALTER TABLE `tb_user`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT untuk tabel yang dibuang
 --
 
 --
--- AUTO_INCREMENT for table `tb_gejala`
+-- AUTO_INCREMENT untuk tabel `tb_gejala`
 --
 ALTER TABLE `tb_gejala`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
 
 --
--- AUTO_INCREMENT for table `tb_hasilcf`
+-- AUTO_INCREMENT untuk tabel `tb_hasilcf`
 --
 ALTER TABLE `tb_hasilcf`
   MODIFY `id_hasilcf` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `tb_hasilds`
+-- AUTO_INCREMENT untuk tabel `tb_hasilds`
 --
 ALTER TABLE `tb_hasilds`
   MODIFY `id_hasilds` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `tb_hitungds`
+-- AUTO_INCREMENT untuk tabel `tb_hitungds`
 --
 ALTER TABLE `tb_hitungds`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `tb_klp_gejala`
+-- AUTO_INCREMENT untuk tabel `tb_klp_gejala`
 --
 ALTER TABLE `tb_klp_gejala`
   MODIFY `id_klp_gejala` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT for table `tb_penyakit`
+-- AUTO_INCREMENT untuk tabel `tb_penyakit`
 --
 ALTER TABLE `tb_penyakit`
   MODIFY `id_p` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
--- AUTO_INCREMENT for table `tb_rulecf`
+-- AUTO_INCREMENT untuk tabel `tb_rulecf`
 --
 ALTER TABLE `tb_rulecf`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=55;
 
 --
--- AUTO_INCREMENT for table `tb_ruleds`
+-- AUTO_INCREMENT untuk tabel `tb_ruleds`
 --
 ALTER TABLE `tb_ruleds`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
 
 --
--- AUTO_INCREMENT for table `tb_user`
+-- AUTO_INCREMENT untuk tabel `tb_user`
 --
 ALTER TABLE `tb_user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
--- Constraints for dumped tables
+-- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)
 --
 
 --
--- Constraints for table `tb_gejala`
+-- Ketidakleluasaan untuk tabel `tb_gejala`
 --
 ALTER TABLE `tb_gejala`
   ADD CONSTRAINT `tb_gejala_ibfk_1` FOREIGN KEY (`id_klp_gejala`) REFERENCES `tb_klp_gejala` (`id_klp_gejala`);
 
 --
--- Constraints for table `tb_hasilcf`
+-- Ketidakleluasaan untuk tabel `tb_hasilcf`
 --
 ALTER TABLE `tb_hasilcf`
   ADD CONSTRAINT `tb_hasilcf_ibfk_1` FOREIGN KEY (`id_user`) REFERENCES `tb_user` (`id`),
   ADD CONSTRAINT `tb_hasilcf_ibfk_2` FOREIGN KEY (`id_penyakit`) REFERENCES `tb_penyakit` (`id_p`);
 
 --
--- Constraints for table `tb_hasilds`
+-- Ketidakleluasaan untuk tabel `tb_hasilds`
 --
 ALTER TABLE `tb_hasilds`
   ADD CONSTRAINT `tb_hasilds_ibfk_1` FOREIGN KEY (`id_user`) REFERENCES `tb_user` (`id`),
   ADD CONSTRAINT `tb_hasilds_ibfk_2` FOREIGN KEY (`id_penyakit`) REFERENCES `tb_penyakit` (`id_p`);
 
 --
--- Constraints for table `tb_rulecf`
+-- Ketidakleluasaan untuk tabel `tb_rulecf`
 --
 ALTER TABLE `tb_rulecf`
   ADD CONSTRAINT `tb_rulecf_ibfk_1` FOREIGN KEY (`id_gejala`) REFERENCES `tb_gejala` (`id`),
   ADD CONSTRAINT `tb_rulecf_ibfk_2` FOREIGN KEY (`id_penyakit`) REFERENCES `tb_penyakit` (`id_p`);
 
 --
--- Constraints for table `tb_ruleds`
+-- Ketidakleluasaan untuk tabel `tb_ruleds`
 --
 ALTER TABLE `tb_ruleds`
   ADD CONSTRAINT `tb_ruleds_ibfk_1` FOREIGN KEY (`id_gejala`) REFERENCES `tb_gejala` (`id`),

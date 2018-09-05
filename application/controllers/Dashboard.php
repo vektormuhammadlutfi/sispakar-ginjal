@@ -7,7 +7,7 @@ class Dashboard extends CI_Controller {
 		parent::__construct();
 		$this->load->helper(array('form', 'url', 'date'));
 		$this->load->library(array('session'));
-		$this->load->model(array('Kelompok_model', 'Rulecf_model', 'Gejala_model', 'Penyakit_model'));
+		$this->load->model(array('Kelompok_model', 'Rulecf_model', 'Gejala_model', 'Penyakit_model', 'History_model'));
 	}
 	
 	public function index()
@@ -31,6 +31,14 @@ class Dashboard extends CI_Controller {
 
 	public function login(){
 		$this->load->view('user/login');
+	}
+
+	public function riwayat(){
+		$id = $this->session->userdata('id_user');
+
+		$data['listHasil'] = $this->History_model->listHasil($id);
+		$this->load->view('user/diagnosa/riwayat');
+
 	}
 
 	public function diagnosa()
@@ -85,6 +93,14 @@ class Dashboard extends CI_Controller {
 			}
 			usort($penyakit, "cmp");
 			$data["listPenyakit"] = $penyakit;
+			// $data_hasil = array(
+			// 	'id_penyakit'=>$penyakit[0]['id_penyakit'],
+			// 	'nama_penyakit'=>$penyakit[0]['nama_penyakit'],
+			// 	'kepercayaan'=>$penyakit[0]['kepercayaan'],
+			// 	'id_user'=>$penyakit[0]['id_user'],
+			// );
+			// $this->db->insert('tb_hasilcf', $data_hasil);
+
 			$this->load->view('user/diagnosa/index', $data);
 		}
 	}
