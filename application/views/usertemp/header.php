@@ -56,7 +56,7 @@
 									<?php 
 									if($this->session->userdata('is_login') == TRUE && $this->session->userdata('level') == 'pasien'){
 									?>
-          							<li><a href="<?php echo site_url() ?>/login_user/logout"><?php echo $this->session->userdata('nama_pengguna') ?>,  Logout </a></li>
+          							<li><a href="<?php echo site_url() ?>/login_user/logout"><?php echo $this->session->userdata('username') ?>,  Logout </a></li>
 									<?php } else{ ?>
 									<li><a href="<?php echo site_url() ?>/login_user"></i> Login </a></li>
 									<?php } ?>
