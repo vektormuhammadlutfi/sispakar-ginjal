@@ -29,7 +29,8 @@ class Login_user extends CI_Controller {
 						'username' => $username,
 						'password' => $password,
 						'is_login' => TRUE,
-						'level' => $check->level
+						'level' => $check->level,
+						'id_user' => $check->id
 				);
 				$this->session->set_userdata($data);
 				redirect('dashboard/diagnosa');

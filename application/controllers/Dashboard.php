@@ -66,6 +66,7 @@ class Dashboard extends CI_Controller {
 				$CFBefore=0;
 				$j=0;
 				foreach($listGejala->result() as $value2){
+
 					$j++;
 					if($j==3){
 						$combineCFmb=$value2->mb;
@@ -98,7 +99,7 @@ class Dashboard extends CI_Controller {
 			$data_hasil = array(
 				'id_user'=>$penyakit[0]['id_user'],
 				'kd_penyakit'=>$penyakit[0]['kd_penyakit'],
-				'nama'=>$penyakit[0]['nama'],
+				'nama_penyakit'=>$penyakit[0]['nama'],
 				'kepercayaan'=>$penyakit[0]['kepercayaan'],
 			);
 			$this->db->insert('tb_hasilcf', $data_hasil);
