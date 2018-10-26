@@ -83,6 +83,8 @@ class Dashboard extends CI_Controller {
 				}
 			}
 
+			// print_r($penyakit[0]);exit;
+
 			function cmp($a, $b)
 			{
 				return ($a["kepercayaan"] > $b["kepercayaan"]) ? -1 : 1;
