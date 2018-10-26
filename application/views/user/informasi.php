@@ -38,7 +38,7 @@
 				<!-- Team Member -->
 				<div class="col-lg-4 team_col">
 					<div class="team_member">
-						<div class="team_member_image d-flex flex-column align-items-center justify-content-end"><img src="<?php echo base_url()?>templates/caremed/images/kidney1.png" alt=""></div>
+						<div class="team_member_image d-flex flex-column align-items-center justify-content-end"><img src="<?php echo base_url()?>templates/caremed/images/akut.jpg" alt=""></div>
 						<div class="team_member_info">
 							<div class="team_member_name"><a href="#">Gagal Ginjal Akut</a></div>
 							<div class="team_member_title" style="text-align: justify;">Gagal ginjal akut adalah penyakit ginjal yang merujuk pada kondisi ketika ginjal seseorang rusak secara mendadak, sehingga tidak bisa berfungsi. Gagal ginjal akut terjadi ketika ginjal tiba-tiba tidak bisa menyaring limbah kimiawi dari darah yang bisa memicu bertumpuknya limbah tersebut </div>
@@ -49,7 +49,7 @@
 				<!-- Team Member -->
 				<div class="col-lg-4 team_col">
 					<div class="team_member">
-						<div class="team_member_image d-flex flex-column align-items-center justify-content-end"><img src="<?php echo base_url()?>templates/caremed/images/kidney1.png" alt=""></div>
+						<div class="team_member_image d-flex flex-column align-items-center justify-content-end"><img src="<?php echo base_url()?>templates/caremed/images/kroniss.jpg" alt=""></div>
 						<div class="team_member_info">
 							<div class="team_member_name"><a href="#">Gagal Ginjal Kronik</a></div>
 							<div class="team_member_title" style="text-align: justify;">Gagal ginjal kronik adalah kondisi saat fungsi ginjal mulai menurun secara bertahap. Indonesia Renal Registry mendefinisikan gagal ginjal kronis sebagai kerusakan ginjal, dapat berupa kelainan jaringan, komposisi darah dan urine atau tes pencitraan ginjal, yang dialami lebih dari tiga bulan.</div>
@@ -60,29 +60,7 @@
 				<!-- Team Member -->
 				<div class="col-lg-4 team_col">
 					<div class="team_member">
-						<div class="team_member_image d-flex flex-column align-items-center justify-content-end"><img src="<?php echo base_url()?>templates/caremed/images/kidney1.png" alt=""></div>
-						<div class="team_member_info">
-							<div class="team_member_name"><a href="#">Batu Ginjal</a></div>
-							<div class="team_member_title" style="text-align: justify;">Batu di ginjal adalah endapan keras yang terbentuk dari zat yang ada di air kencing. Penyakit batu ginjal atau kencing batu ini biasanya berukuran sangat kecil atau bisa mencapai sekitar beberapa inci.</div>
-						</div>
-					</div>
-				</div>
-
-				<!-- Team Member -->
-				<div class="col-lg-4 team_col">
-					<div class="team_member">
-						<div class="team_member_image d-flex flex-column align-items-center justify-content-end"><img src="<?php echo base_url()?>templates/caremed/images/kidney1.png" alt=""></div>
-						<div class="team_member_info">
-							<div class="team_member_name"><a href="#">Kista Ginjal</a></div>
-							<div class="team_member_title" style="text-align: justify;">Kista ginjal adalah kantong berbentuk bulat atau oval dan berisi cairan yang terbentuk di dalam ginjal atau pada ginjal. Kista pada ginjal dapat muncul sebagai kelainan bawaan dari lahir, misalnya pada penyakit ginjal polikistik. Kista ginjal yang umum terjadi adalah kista ginjal sederhana.</div>
-						</div>
-					</div>
-				</div>
-
-				<!-- Team Member -->
-				<div class="col-lg-4 team_col">
-					<div class="team_member">
-						<div class="team_member_image d-flex flex-column align-items-center justify-content-end"><img src="<?php echo base_url()?>templates/caremed/images/kidney1.png" alt=""></div>
+						<div class="team_member_image d-flex flex-column align-items-center justify-content-end"><img src="<?php echo base_url()?>templates/caremed/images/kanker.jpg" alt=""></div>
 						<div class="team_member_info">
 							<div class="team_member_name"><a href="#">Kanker Ginjal</a></div>
 							<div class="team_member_title" style="text-align: justify;">Kanker ginjal adalah salah satu jenis kanker yang paling cepat tumbuh dan menyebar dalam tubuh manusia. Terlambat mendapatkan diagnosis bisa berakibat sangat fatal.</div>
@@ -93,10 +71,43 @@
 				<!-- Team Member -->
 				<div class="col-lg-4 team_col">
 					<div class="team_member">
-						<div class="team_member_image d-flex flex-column align-items-center justify-content-end"><img src="<?php echo base_url()?>templates/caremed/images/kidney1.png" alt=""></div>
+						<div class="team_member_image d-flex flex-column align-items-center justify-content-end"><img src="<?php echo base_url()?>templates/caremed/images/glome.jpg" alt=""></div>
 						<div class="team_member_info">
-							<div class="team_member_name"><a href="#">Infeksi Saluran Kemih</a></div>
-							<div class="team_member_title" style="text-align: justify;">Infeksi saluran kemih (ISK) adalah kondisi ketika organ yang termasuk ke dalam sistem kemih, yaitu ginjal, ureter, kandung kemih, dan uretra, mengalami infeksi.</div>
+							<div class="team_member_name"><a href="#">Glomerulonefritis</a></div>
+							<div class="team_member_title" style="text-align: justify;">Glomerulonefritis  adalah salah satu jenis penyakit ginjal di mana terjadi peradangan pada glomerulus. Glomerulus merupakan bagian ginjal yang berfungsi sebagai penyaring dan membuang cairan serta elektrolit berlebih, juga zat sisa dari aliran darah.</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Team Member -->
+				<div class="col-lg-4 team_col">
+					<div class="team_member">
+						<div class="team_member_image d-flex flex-column align-items-center justify-content-end"><img src="<?php echo base_url()?>templates/caremed/images/kista.jpg" alt=""></div>
+						<div class="team_member_info">
+							<div class="team_member_name"><a href="#">Kista Ginjal</a></div>
+							<div class="team_member_title" style="text-align: justify;">Kista ginjal adalah kantong berbentuk bulat atau oval dan berisi cairan yang terbentuk di dalam ginjal atau pada ginjal. Kista pada ginjal dapat muncul sebagai kelainan bawaan dari lahir, misalnya pada penyakit ginjal polikistik. Kista ginjal yang umum terjadi adalah kista ginjal sederhana.</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Team Member -->
+				<div class="col-lg-4 team_col">
+					<div class="team_member">
+						<div class="team_member_image d-flex flex-column align-items-center justify-content-end"><img src="<?php echo base_url()?>templates/caremed/images/nefritiss.jpg" alt=""></div>
+						<div class="team_member_info">
+							<div class="team_member_name"><a href="#">Nefritis Akut</a></div>
+							<div class="team_member_title" style="text-align: justify;">Nefritis merupakan salah satu penyakit pada ginjal. Nefritis adalah penyakit yang biasaya ditandai dengan adanya peradangan pada ginjal.</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Team Member -->
+				<div class="col-lg-4 team_col">
+					<div class="team_member">
+						<div class="team_member_image d-flex flex-column align-items-center justify-content-end"><img src="<?php echo base_url()?>templates/caremed/images/batuu.jpg" alt=""></div>
+						<div class="team_member_info">
+							<div class="team_member_name"><a href="#">Batu Ginjal</a></div>
+							<div class="team_member_title" style="text-align: justify;">Batu di ginjal adalah endapan keras yang terbentuk dari zat yang ada di air kencing. Penyakit batu ginjal atau kencing batu ini biasanya berukuran sangat kecil atau bisa mencapai sekitar beberapa inci.</div>
 						</div>
 					</div>
 				</div>

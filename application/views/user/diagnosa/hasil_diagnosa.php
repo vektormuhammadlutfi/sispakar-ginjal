@@ -72,8 +72,6 @@
         </div><!--box body-->
         <div class="box-footer clearfix" style="padding-bottom: 3%;"><br>
             <a class="btn btn-sm btn-primary btn-flat" href="<?php echo site_url() ?>/dashboard/diagnosa">Deteksi Ulang</a>
-            <!-- <button class="btn btn-sm btn-primary btn-flat" name="mysubmit">Simpan</button> -->
-            <!-- <button class="btn btn-sm btn-info btn-flat">Cetak</button> -->
         </div>
     </div><!--box-->
 </div>

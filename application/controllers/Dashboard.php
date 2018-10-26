@@ -33,13 +33,6 @@ class Dashboard extends CI_Controller {
 		$this->load->view('user/login');
 	}
 
-	// public function riwayat(){
-	// 	$id = $this->session->userdata('id_user');
-
-	// 	$data['listHasil'] = $this->History_model->listHasil($id);
-	// 	$this->load->view('user/diagnosa/riwayat');
-
-	// }
 
 	public function diagnosa()
 	{
@@ -73,11 +66,11 @@ class Dashboard extends CI_Controller {
 						$combineCFmd=$value2->md;
 					}
 					else
-					$combineCFmb =$combineCFmb + ($value2->mb * (1 - $combineCFmb));
+									$combineCFmb =$combineCFmb + ($value2->mb * (1 - $combineCFmb));
 									$combineCFmd =$combineCFmd + ($value2->md * (1 - $combineCFmd));
 									$combinehasil=$combineCFmb-$combineCFmd;
 				}
-				if($combinehasil>=0.5)
+				if($combinehasil)
 				{
 					$penyakit[$i]=array('kd_penyakit'=>$value->kd_penyakit,
 										'nama'=>$value->nama,
