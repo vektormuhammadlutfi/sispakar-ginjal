@@ -61,7 +61,7 @@ class Dashboard extends CI_Controller {
 				foreach($listGejala->result() as $value2){
 
 					$j++;
-					if($j==3){
+					if($j==1){
 						$combineCFmb=$value2->mb;
 						$combineCFmd=$value2->md;
 					}
