@@ -1,8 +1,8 @@
-<div class="content" style="margin-top: 17%;">
+<div class="content" style="margin-top: 17%;" id="printTable">
     <h3 style="text-align: center;">Hasil Analisis</h3>
     <div class="box box-warning" style="background: #ffffff; height: auto;">
         <div class="box-header with-border">
-            <h6 class="box-title">Gejala yang dipilih</h6>
+            <h6 class="box-title"><b>Gejala yang dipilih</b></h6>
         </div><!-- /.box-header -->
             <div class="box-body table-responsive">
             <table id="tbl-list" class="table table-bordered table-striped">
@@ -23,7 +23,7 @@
     </div><!--box-->
     <div class="box box-success" style="background: #ffffff; height: auto;">
         <div class="box-header with-border">
-            <h6 class="box-title">Hasil Diagnosa</h6>
+            <h6 class="box-title"><b>Hasil Diagnosa</b></h6>
         </div><!-- /.box-header -->
         <div class="box-body">
             <table id="tbl-list" class="table table-bordered table-striped">
@@ -56,8 +56,8 @@
         <div class="box-body">
             <?php if(sizeof($listPenyakit)>0) { ?>
                 <p>
-                    Nama Pasien : <?php echo $this->session->userdata('username') ?>
-                    <br>
+                    <b>Nama Pasien : <?php echo $this->session->userdata('nama_pengguna') ?>
+                    </b><br>
                     Berdasarkan gejala yang diinput, Anda di prediksi mengidap penyakit <b><?php echo $listPenyakit[0]['nama'];?></b> dengan tingkat kepercayaan <b><?php echo $listPenyakit[0]['kepercayaan'];?> %</b> dikurang dengan tingkat ketidakpercayaan <b><?php echo $listPenyakit[0]['tidakpercaya']; ?> % </b>maka hasil perhitungan CF sebesar <b><?php echo $listPenyakit[0]['hasilcf']; ?> %. </b> <br/></p>
                 <p><h3>
                     Solusi
@@ -70,13 +70,14 @@
                 </p>
             <?php }?>
         </div><!--box body-->
-        <div class="box-footer clearfix" style="padding-bottom: 3%;"><br>
-            <a class="btn btn-sm btn-primary btn-flat" href="<?php echo site_url() ?>/dashboard/diagnosa">Deteksi Ulang</a>
-        </div>
     </div><!--box-->
-</div>
+</div> <!-- content -->
+        <div class="box-footer clearfix" style="padding-bottom: 3%; padding-left: 2%;"><br>
+            <a class="btn btn-sm btn-primary btn-flat" href="<?php echo site_url() ?>/dashboard/diagnosa">Deteksi Ulang</a>
+            <button class="btn btn-sm btn-primary btn-flat" onclick >Cetak</button>
+        </div>
 
-<!-- <script type="text/javascript">
+<script type="text/javascript">
     function printData()
     {
         var
@@ -85,10 +86,9 @@
         newWin.document.write(divToPrint.outerHTML);
         newWin.print();
         newWin.close();
-
     }
 
     $('button').on('click',function(){
         printData();
     }) 
-</script> -->
+</script>

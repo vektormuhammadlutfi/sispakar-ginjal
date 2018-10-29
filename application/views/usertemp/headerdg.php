@@ -16,7 +16,7 @@
 <link rel="stylesheet" type="text/css" href="<?php echo base_url()?>templates/caremed/styles/main_styles.css">
 <link rel="stylesheet" type="text/css" href="<?php echo base_url()?>templates/caremed/styles/responsive.css">
 
-<!-- <link href="<?php echo base_url()?>asset/be/css/bootstrap.min.css" rel="stylesheet" type="text/css" /> -->
+		<!-- <link href="<?php echo base_url()?>asset/be/css/bootstrap.min.css" rel="stylesheet" type="text/css" /> -->
         <!-- font Awesome -->
         <!-- <link href="<?php echo base_url()?>asset/be/css/font-awesome.min.css" rel="stylesheet" type="text/css" /> -->
         <!-- Ionicons -->
@@ -28,16 +28,24 @@
         <!-- Theme style -->
         <!-- <link href="<?php echo base_url()?>asset/be/css/AdminLTE.css" rel="stylesheet" type="text/css" /> -->
 
-    <!-- <link rel="stylesheet" type="text/css" href="<?php echo base_url()?>asset/be/js/wysiwyg/src/bootstrap-wysihtml5.css" /> -->
+    	<!-- <link rel="stylesheet" type="text/css" href="<?php echo base_url()?>asset/be/js/wysiwyg/src/bootstrap-wysihtml5.css" /> -->
 
-    <!-- <link rel="stylesheet" type="text/css" href="<?php echo base_url()?>asset/be/css/jquery.fileupload-ui.css" /> -->
-        <!-- <script type='text/javascript' src='<?php echo base_url();?>asset/assets/js/jquery-1.8.2.min.js'></script> -->
-        
-        <!-- <script src="<?php echo base_url()?>asset/be/js/jquery-ui-1.10.3.min.js" type="text/javascript"></script> -->
+    	<link rel="stylesheet" type="text/css" href="<?php echo base_url()?>asset/be/css/jquery.fileupload-ui.css" />
+		<script type='text/javascript' src='<?php echo base_url();?>asset/assets/js/jquery-1.8.2.min.js'></script>  -->
+        <script src="<?php echo base_url()?>asset/be/js/jquery-ui-1.10.3.min.js" type="text/javascript"></script>	
+    	<!-- bootstrap datepicker -->
+    	<link href="<?php echo base_url()?>asset/be/css/datepicker/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
+    	<!-- <script type="text/javascript">
+    		function printlayer(layer){
+    			var generator=window.open("name");
+    			var layertext= document.getElementById(layer);
+    			generator.document.write(layetext.innerHTML.replace("Print Me"));
 
-    <!-- bootstrap datepicker -->
-    <!-- <link href="<?php echo base_url()?>asset/be/css/datepicker/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen"> -->
-
+    			generator.document.close();
+    			generator.print();
+    			generator.close();
+    		}
+    	</script> -->
 </head>
 <body>
 
@@ -75,11 +83,10 @@
 									<li><a href="<?php echo site_url() ?>/dashboard/informasi">Informasi</a></li>
 									<li><a href="<?php echo site_url() ?>/dashboard/tentang">Tentang</a></li>
 									<li><a href="<?php echo site_url() ?>/dashboard/diagnosa">Diagnosa</a></li>
-									<!-- <li><a href="<?php echo site_url() ?>/dashboard/riwayat">Riwayat</a></li> -->
 									<?php 
 									if($this->session->userdata('is_login') == TRUE && $this->session->userdata('level') == 'pasien'){
 									?>
-									<li><a href="<?php echo site_url() ?>/login_user/logout"><i class="fa fa-user"></i> Hai, <?php echo $this->session->userdata('username') ?>, Logout </a></li>
+									<li><a href="<?php echo site_url() ?>/login_user/logout"><i class="fa fa-user"></i> Hai, <?php echo $this->session->userdata('nama_pengguna') ?>, Logout </a></li>
 									<?php } else{ ?>
 									<li><a href="<?php echo site_url() ?>/login_user"><i class="fa fa-user"></i> Login </a></li>
 									<?php } ?>
@@ -135,7 +142,7 @@
 					<?php 
 					if($this->session->userdata('is_login') == TRUE && $this->session->userdata('level') == 'pasien'){
 					?>
-					<li class="menu_item menu_mm"><a href="<?php echo site_url() ?>/login_user/logout"><i class="fa fa-user"></i> Hai, <?php echo $this->session->userdata('username') ?>, Logout </a></li>
+					<li class="menu_item menu_mm"><a href="<?php echo site_url() ?>/login_user/logout"><i class="fa fa-user"></i> Hai, <?php echo $this->session->userdata('nama_pengguna') ?>, Logout </a></li>
 					<?php } else{ ?>
 					<li class="menu_item menu_mm"><a href="<?php echo site_url() ?>/login_user"><i class="fa fa-user"></i> Login </a></li>
 					<?php } ?>

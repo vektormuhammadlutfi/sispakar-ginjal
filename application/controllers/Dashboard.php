@@ -7,7 +7,7 @@ class Dashboard extends CI_Controller {
 		parent::__construct();
 		$this->load->helper(array('form', 'url', 'date'));
 		$this->load->library(array('session'));
-		$this->load->model(array('Kelompok_model', 'Rulecf_model', 'Gejala_model', 'Penyakit_model', 'History_model'));
+		$this->load->model(array('Kelompok_model', 'Rulecf_model', 'Gejala_model', 'Penyakit_model'));
 	}
 	
 	public function index()
@@ -70,7 +70,7 @@ class Dashboard extends CI_Controller {
 									$combineCFmd =$combineCFmd + ($value2->md * (1 - $combineCFmd));
 									$combinehasil=$combineCFmb-$combineCFmd;
 				}
-				if($combinehasil)
+				if($combinehasil>=0.5)
 				{
 					$penyakit[$i]=array('kd_penyakit'=>$value->kd_penyakit,
 										'nama'=>$value->nama,

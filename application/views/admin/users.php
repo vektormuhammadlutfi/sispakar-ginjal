@@ -16,7 +16,10 @@
                   <div class="col-lg-12">
                       <section class="panel">
                           <header class="panel-heading">
-                                <i class="fa fa-plus"></i><a href="<?php echo site_url() ?>/users/create">Tambah Data</a>
+                                <i class="fa fa-plus"></i><a href="<?php echo site_url() ?>/users/create">Tambah Data</a><br>
+                          </header>
+                          <header class="panel-heading">
+                                <i class="fa fa-print"></i><a href="<?php echo site_url() ?>/home/cetakuser">Cetak</a>
                           </header>
                           <table class="table table-striped table-advance table-hover">
                            <tbody>

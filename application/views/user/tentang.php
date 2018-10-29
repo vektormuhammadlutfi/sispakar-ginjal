@@ -52,7 +52,8 @@
 					<!-- Box -->
 					<div class="box box_appointments">
 						<div class="box_icon d-flex flex-column align-items-start justify-content-center"><div style="width: 29px; height:29px;"><img src="<?php echo base_url()?>templates/caremed/images/milestone_3.svg" alt=""></div></div>
-						<div class="box_title">Pakar</div>
+						<div class="box_title">Pakar
+						<h4>dr. Amelia Rifai Sp.PD</h4></div>
 						<div class="box_text">pakar adalah seseorang yang memiliki keahlian tertentu pada bidang ilmu tertentu yang dapat memberikan suatu keputusan pada permasalahan tertentu.</div>
 					</div>
 

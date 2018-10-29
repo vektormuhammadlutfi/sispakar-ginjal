@@ -29,6 +29,7 @@ class Login_user extends CI_Controller {
 						'username' => $username,
 						'password' => $password,
 						'is_login' => TRUE,
+						'nama_pengguna' => $check->nama_pengguna,
 						'level' => $check->level,
 						'id_user' => $check->id
 				);
@@ -40,7 +41,7 @@ class Login_user extends CI_Controller {
 
 	public function logout()
 	{
-		$data = array('username','password','is_login', 'nama', 'level');
+		$data = array('username','password','is_login', 'nama_pengguna', 'level');
 		$this->session->unset_userdata($data);
 		redirect('dashboard/index');	
 	}

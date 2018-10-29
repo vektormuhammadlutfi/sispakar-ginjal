@@ -18,14 +18,14 @@
                                 <i class="fa fa-check"></i><a href="#">Hasil Diagnosa CF</a>
                           </header>
                           <header class="panel-heading">
-                                <i class="fa fa-print"></i><a href="<?php echo site_url() ?>/dashboard/cetak_laporan">Cetak</a>
+                                <i class="fa fa-print"></i><a href="<?php echo site_url() ?>/home/cetak">Cetak</a>
                           </header>
 
                           <table class="table table-striped table-advance table-hover">
                            <tbody>
                               <tr>	
                                  <th>NO</th>
-                                 <th>Nama Pasien</th>
+                                 <th>Nama Pengguna</th>
                                  <th>Kode Penyakit</th>
                                  <th>Nama Penyakit</th>
                                  <th>Tanggal Diagnosa</th>
@@ -36,7 +36,7 @@
                                   foreach ($kelompok_data as $hasilcf) : ?>  
                               <tr>
                                  <td><?php echo $no++ ?></td>
-                                 <td><?php echo $hasilcf->id_user ?></td>
+                                 <td><?php echo $hasilcf->nama_pengguna ?></td>
                                  <td><?php echo $hasilcf->kd_penyakit ?></td>
                                  <td><?php echo $hasilcf->nama_penyakit ?></td>
                                  <td><?php echo $hasilcf->created_at ?></td>

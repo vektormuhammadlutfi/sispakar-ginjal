@@ -10,7 +10,7 @@ class Hasil_cf extends CI_Controller {
 	}
 	public function index(){
 		$data['contents'] = 'admin/hasil_cf'; 
-		$data['kelompok_data'] = $this->Hasil_model->daftarHasil();
+		$data['kelompok_data'] = $this->Hasil_model->get_hasilcf();
 		$this->load->view('templates/index', $data);
 	}
 
@@ -19,13 +19,4 @@ class Hasil_cf extends CI_Controller {
 		$this->Hasil_model->hapus_hasilcf($id_hasilcf);
 		redirect('hasil_cf/index');
 	}
-
-	// public function save(){
-	// 	if (isset($_POST['submit'])){
-	// 		$this->Hasil_model->insert();
-	// 		redirect('dashboard/diagnosa');
-	// 	}
-	// 	$data['view']='user/diagnosa/hasilcf';
-	// 	$this->load->view('user/diagnosa/index', $data);
-	// }
 }
