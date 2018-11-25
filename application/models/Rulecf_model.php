@@ -9,6 +9,7 @@ class Rulecf_model extends CI_Model {
 						->from('tb_rulecf')
 						->join('tb_gejala', 'tb_gejala.id = tb_rulecf.id_gejala ')
 						->join('tb_penyakit', 'tb_penyakit.id_p = tb_rulecf.id_penyakit ')
+						->order_by('tb_rulecf.id', 'DESC')
 						->get()
 						->result_array();
 	}

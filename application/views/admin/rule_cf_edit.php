@@ -20,33 +20,32 @@
                           <div class="panel-body">
                               <div class="form">
                                   <form class="form-validate form-horizontal" action="" method="POST">
+                                    <input type="hidden" name="id" value="<?php echo $nilaicf['id'] ?>" >
                                       <div class="form-group ">
                                           <label for="id_gejala" class="control-label col-lg-2">Gejala <span class="required">*</span></label>
                                           <div class="col-lg-10">
-                                              <select name="id_gejala" id="id_gejala" class="form-control ">
-                                              <?php $data = $this->Rulecf_model->getgejala();
-
-                                              ?>
-                                              <?php foreach ($data->result() as $key){ ?>
-                                                <option value="<?php echo $key->id
-                                                 ?>"><?php echo $key->nama_gejala; ?></option>
-                                              <?php } ?> 
-                                            
-                                            </select>
+                                             <select name="id_gejala" class="form-control"  style="font-size: 12px;">
+                                                <?php
+                                                  foreach ($gejala as $g) {
+                                                    echo " <option value='$g->id'";
+                                                    echo $nilaicf['id_gejala']==$g->id?'selected':'' ;
+                                                    echo ">$g->nama_gejala</option>";
+                                                  }
+                                                 ?>
+                                              </select>
                                           </div>
                                       </div>
                                       <div class="form-group ">
                                           <label for="id_penyakit" class="control-label col-lg-2">Nama Penyakit <span class="required">*</span></label>
                                           <div class="col-lg-10">
                                               <select name="id_penyakit" class="form-control ">
-                                              <?php $data = $this->Rulecf_model->getpenyakit();
-
-                                              ?>
-                                              <?php foreach ($data->result() as $key){ ?>
-                                                <option value="<?php echo $key->id_p
-                                                 ?>"><?php echo $key->nama; ?></option>
-                                              <?php } ?> 
-                                            
+                                               <?php
+                                                  foreach ($penyakit as $g) {
+                                                    echo " <option value='$g->id_p'";
+                                                    echo $nilaicf['id_penyakit']==$g->id_p?'selected':'' ;
+                                                    echo ">$g->nama</option>";
+                                                  }
+                                                 ?>
                                             </select>
                                           </div>
                                       </div>
