@@ -61,6 +61,12 @@
                                               <input class="form-control " id="md" type="text" name="md" value="<?php echo $nilaicf['md'] ?>" required />
                                           </div>
                                       </div>
+                                       <div class="form-group ">
+                                          <label for="bobot" class="control-label col-lg-2">Bobot <span class="required">*</span></label>
+                                          <div class="col-lg-10">
+                                              <input class="form-control " id="bobot" type="text" name="bobot" value="<?php echo $nilaicf['bobot'] ?>" required />
+                                          </div>
+                                      </div>
                                       <div class="form-group">
                                           <div class="col-lg-offset-2 col-lg-10">
                                               <button class="btn btn-default" type="submit" name="submit">Simpan</button>

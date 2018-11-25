@@ -19,12 +19,14 @@ class Rulecf_model extends CI_Model {
 		$id_penyakit = $this->input->post('id_penyakit');
 		$md = $this->input->post('md');
 		$mb = $this->input->post('mb');
+		$bobot = $this->input->post('bobot');
 
 		$data = array(
 					'id_gejala'=>$id_gejala,
 					'id_penyakit'=>$id_penyakit,
 					'md'=>$md,
 					'mb'=>$mb,
+					'bobot'=>$bobot,
 				);
 		$this->db->insert('tb_rulecf', $data);
 
@@ -41,11 +43,14 @@ class Rulecf_model extends CI_Model {
 		$id_penyakit = $this->input->post('id_penyakit');
 		$md = $this->input->post('md');
 		$mb = $this->input->post('mb');
+		$bobot = $this->input->post('bobot');
 
 		$data = array(
 					'id_gejala'=>$id_gejala,
 					'id_penyakit'=>$id_penyakit,
-					'md'=>$md,'mb'=>$mb,
+					'md'=>$md,
+					'mb'=>$mb,
+					'bobot'=>$bobot,
 		);
 		$this->db->where('id',$gpid);
 		$this->db->update('tb_rulecf', $data);

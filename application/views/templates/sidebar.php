@@ -1,4 +1,4 @@
-<!--sidebar start-->
+sidebar start-->
       <aside>
           <div id="sidebar"  class="nav-collapse" style="background: #ffffff;">
               <!-- sidebar menu start-->
@@ -39,8 +39,8 @@
                           <span class="menu-arrow arrow_carrot-right"></span>
                       </a>
                       <ul class="sub">
-                          <li><a style="color: #688A7E; background: #ffffff;" class="" href="<?php echo site_url() ?>/rule_cf">Nilai CF</a></li>
-                          <li><a style="color: #688A7E; background: #ffffff;" class="" href="<?php echo site_url() ?>/rule_ds">Nilai DS</a></li>
+                          <li><a style="color: #688A7E; background: #ffffff;" class="" href="<?php echo site_url() ?>/rule_cf">Nilai CF dan DS</a></li>
+                          <!-- <li><a style="color: #688A7E; background: #ffffff;" class="" href="<?php echo site_url() ?>/rule_ds">Nilai DS</a></li> -->
                       </ul>
                   </li>
                   <li class="sub-menu">
@@ -64,4 +64,4 @@
               <!-- sidebar menu end-->
           </div>
       </aside>
-      <!--sidebar end-->
+      <!--sidebar end
