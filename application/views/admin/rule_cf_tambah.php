@@ -43,37 +43,6 @@
                                             <select name="id_penyakit" class="form-control ">
                                               <option>-Pilih-</option>
                                               <?php $data = $this->Rulecf_model->getpenyakit();
-
-<<<<<<< HEAD
-                                              ?>
-                                              <?php foreach ($data->result() as $key){ ?>
-                                                <option value="<?php echo $key->id_p ?>"><?php echo $key->nama; ?></option>
-                                              <?php } ?> 
-                                            
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="form-group ">
-                                        <label for="mb" class="control-label col-lg-2">Nilai MB <span class="required">*</span></label>
-                                        <div class="col-lg-10">
-                                            <input class="form-control " id="mb" type="text" name="mb" required />
-                                        </div>
-                                    </div>
-                                    <div class="form-group ">
-                                        <label for="md" class="control-label col-lg-2">Nilai MD <span class="required">*</span></label>
-                                        <div class="col-lg-10">
-                                            <input class="form-control " id="md" type="text" name="md" required />
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="col-lg-offset-2 col-lg-10">
-                                            <button class="btn btn-default" type="submit" name="submit">Simpan</button>
-                                            <button class="btn btn-default" type="button"><a href="<?php echo site_url()?>/rule_cf">Batal</a></button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-=======
                                                 ?>
                                                 <?php foreach ($data->result() as $key){ ?>
                                                   <option value="<?php echo $key->id_p ?>"><?php echo $key->nama; ?></option>
@@ -95,13 +64,6 @@
                                           </div>
                                       </div>
 
-                                       <div class="form-group ">
-                                          <label for="bobot" class="control-label col-lg-2">Bobot <span class="required">*</span></label>
-                                          <div class="col-lg-10">
-                                              <input class="form-control " id="bobot" type="text" name="bobot" required />
-                                          </div>
-                                      </div>
-
                                       <div class="form-group">
                                           <div class="col-lg-offset-2 col-lg-10">
                                               <button class="btn btn-default" type="submit" name="submit">Simpan</button>
@@ -110,7 +72,6 @@
                                       </div>
                                   </form>
                               </div>
->>>>>>> 94b8cbab1b7df9a8e6893cbf55438ccd1f3b75e3
 
                         </div>
                     </section>

@@ -25,7 +25,6 @@
                                 <th>Nama Penyakit</th>
                                 <th>Nilai MB</th>
                                 <th>Nilai MD</th>
-                                <th>Bobot</th>
                                 <th><center>Aksi</center></th>
                                 <?php $no= 1; foreach ($kelompok_data as $data): ?>  
                               <tr>
@@ -34,7 +33,6 @@
                                  <td><?php echo $data['nama'] ?></td>
                                  <td><?php echo $data['mb'] ?></td>
                                  <td><?php echo $data['md'] ?></td>
-                                 <td><?php echo $data['bobot'] ?></td>
                                  <td><center>
                                   <div class="btn-group">
                                       <a class="btn btn-xs btn-default" href="<?php echo site_url('/rule_cf/edit/').$data['gpid'] ?>"><i class="fa fa-edit"></i></a>

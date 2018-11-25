@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 <!-- sidebar start-->
-=======
-sidebar start-->
->>>>>>> 94b8cbab1b7df9a8e6893cbf55438ccd1f3b75e3
       <aside>
           <div id="sidebar"  class="nav-collapse" style="background: #ffffff;">
               <!-- sidebar menu start-->
@@ -44,13 +40,9 @@ sidebar start-->
                           <span class="menu-arrow arrow_carrot-right"></span>
                       </a>
                       <ul class="sub">
-<<<<<<< HEAD
                           <li><a style="color: #688A7E; background: #ffffff;" class="" href="<?php echo site_url() ?>/gejalads">Bobot DS</a></li>
                           <li><a style="color: #688A7E; background: #ffffff;" class="" href="<?php echo site_url() ?>/relasi">Relasi DS</a></li>
-=======
-                          <li><a style="color: #688A7E; background: #ffffff;" class="" href="<?php echo site_url() ?>/rule_cf">Nilai CF dan DS</a></li>
-                          <!-- <li><a style="color: #688A7E; background: #ffffff;" class="" href="<?php echo site_url() ?>/rule_ds">Nilai DS</a></li> -->
->>>>>>> 94b8cbab1b7df9a8e6893cbf55438ccd1f3b75e3
+
                       </ul>
                   </li>
                   <li>
