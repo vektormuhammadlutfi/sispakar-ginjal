@@ -7,10 +7,15 @@ class Gejala_model extends CI_Model {
 		return $this->db->query("SELECT * FROM tb_gejala JOIN tb_klp_gejala on tb_klp_gejala.id_klp_gejala = tb_gejala.id_klp_gejala")->result();
 	}
 
+<<<<<<< HEAD
 	function all_gejala(){
 	$query=$this->db->get("tb_gejalads");
 	
 	return $query;
+=======
+	public function listGejala(){
+		return $this->db->get('tb_gejala')->result();
+>>>>>>> 94b8cbab1b7df9a8e6893cbf55438ccd1f3b75e3
 	}
 
 	public function insert(){

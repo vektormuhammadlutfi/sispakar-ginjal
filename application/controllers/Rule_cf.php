@@ -5,7 +5,7 @@ class Rule_cf extends CI_Controller {
 
 	function __construct(){
 		parent::__construct();
-		$this->load->model('Rulecf_model'); //load model nilaicf
+		$this->load->model(array('Rulecf_model', 'Gejala_model', 'Penyakit_model')); //load model nilaicf
 	}
 	
 	public function index()
@@ -34,10 +34,17 @@ class Rule_cf extends CI_Controller {
 			redirect('rule_cf/index');
 		}
 
+<<<<<<< HEAD
 		$id=$this->uri->segment(3);
 		$data['penyakit'] = $this->db->query("SELECT * FROM tb_penyakit order by id_p")->result();
 		$data['gejala'] = $this->db->query("SELECT * FROM tb_gejala order by id")->result();
 		$data['nilaicf'] = $this->Rulecf_model->getById($id);
+=======
+		$gpid=$this->uri->segment(3);
+		$data['gejala'] = $this->Gejala_model->listGejala();
+		$data['penyakit'] = $this->Penyakit_model->daftarPenyakit();
+		$data['nilaicf'] = $this->Rulecf_model->getById($gpid);
+>>>>>>> 94b8cbab1b7df9a8e6893cbf55438ccd1f3b75e3
 		$data['contents'] = 'admin/rule_cf_edit'; 
 		$this->load->view('templates/index', $data);
 	}

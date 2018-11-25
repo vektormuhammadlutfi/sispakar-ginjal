@@ -11,7 +11,11 @@ class Login_admin extends CI_Controller {
 	public function index()
 	{
 		if($this->session->userdata('is_login') == TRUE && $this->session->userdata('level') == 'admin'){redirect('home/index');}
+<<<<<<< HEAD
 		$this->load->view('templates/index');
+=======
+		$this->load->view('templates/login');
+>>>>>>> 94b8cbab1b7df9a8e6893cbf55438ccd1f3b75e3
 	}
 
 	public function login()
