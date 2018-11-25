@@ -187,7 +187,8 @@
 
                 //proses simpan hasil df dsini
                 //perbaiki ya...aku ngantuk
-                $in = $this->db->query("INSERT INTO tb_hasilcf (id_user, kd_penyakit, nama_penyakit, kepercayaan) VALUES($this->session->userdata('id_user'), 'P007', 'asdas', ".round($best['value'] * 100)." ) ");
+                //bagusnya buatkan tabel hasil df dan simpan kesitu
+                $in = $this->db->query("INSERT INTO tb_hasilcf (id_user, kd_penyakit, nama_penyakit, kepercayaan) VALUES($this->session->userdata('id_user'), 'P007', 'ini hasil df', ".round($best['value'] * 100)." ) ");
                 ?>
 
                 </div>
