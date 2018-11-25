@@ -50,9 +50,9 @@
                                           </div>
                                       </div>
                                       <div class="form-group ">
-                                          <label for="email" class="control-label col-lg-2">Email</label>
+                                          <label for="alamat" class="control-label col-lg-2">Alamat</label>
                                           <div class="col-lg-10">
-                                              <input class="form-control " id="email" type="email" name="email" value="<?php echo $user['email'] ?>" required />
+                                              <input class="form-control " id="alamat" type="text" name="alamat" value="<?php echo $user['alamat'] ?>" required />
                                           </div>
                                       </div>
                                       <div class="form-group ">

@@ -13,7 +13,7 @@
 							<th>Kode Penyakit</th>
 							<th>Nama Penyakit</th>
 							<th>Waktu Diagnosa</th>
-							<th>Hasil Diagnosa</th>
+							<th>Hasil Diagnosa (%)</th>
 						</tr>
 					</thead>
 					<tbody>

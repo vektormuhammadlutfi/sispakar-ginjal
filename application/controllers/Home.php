@@ -45,31 +45,31 @@ class Home extends CI_Controller {
 		
 	}
 
-	public function cetakds(){
-		$data['hasilds'] = $this->db->query("SELECT * FROM tb_hasilds JOIN tb_user on tb_user.id = tb_hasilds.id_user ORDER BY id_hasilds DESC")->result();
+	// public function cetakds(){
+	// 	$data['hasilds'] = $this->db->query("SELECT * FROM tb_hasilds JOIN tb_user on tb_user.id = tb_hasilds.id_user ORDER BY id_hasilds DESC")->result();
 
-		$dompdf = new Dompdf();
+	// 	$dompdf = new Dompdf();
 
-		$html = $this->load->view('user/laporan/laporands.php',$data,true);
+	// 	$html = $this->load->view('user/laporan/laporands.php',$data,true);
 
-		$dompdf->load_html($html);
+	// 	$dompdf->load_html($html);
 
-		// (Optional) Setup the paper size and orientation
-		$dompdf->set_paper('A4', 'landscape');
+	// 	// (Optional) Setup the paper size and orientation
+	// 	$dompdf->set_paper('A4', 'landscape');
 
-		// Render the HTML as PDF
-		$dompdf->render();
+	// 	// Render the HTML as PDF
+	// 	$dompdf->render();
 
-		// Get the generated PDF file contents
-		$pdf = $dompdf->output();
+	// 	// Get the generated PDF file contents
+	// 	$pdf = $dompdf->output();
 
-		// Output the generated PDF to Browser
-		$dompdf->stream('laporands.pdf', array("Attachment" => false));
+	// 	// Output the generated PDF to Browser
+	// 	$dompdf->stream('laporands.pdf', array("Attachment" => false));
 		
-	}
+	// }
 
 	public function cetakuser(){
-		$data['user'] = $this->db->query("SELECT * FROM tb_user  ORDER BY id DESC")->result();
+		$data['user'] = $this->db->query("SELECT * FROM tb_user  WHERE level = 'pasien'")->result();
 
 		$dompdf = new Dompdf();
  

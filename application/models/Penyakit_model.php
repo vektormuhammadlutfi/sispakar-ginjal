@@ -6,6 +6,16 @@ class Penyakit_model extends CI_Model {
 	public function daftarPenyakit(){
 		return $this->db->get('tb_penyakit')->result();
 	}
+
+	function detail_gangguan($id){
+		$qgangguan=$this->db->get_where('tb_penyakit',array('id_p'=>$id));
+		foreach ($qgangguan->result() as $dgangguan){
+			$data['id_p']=$dgangguan->id;
+			$data['nama']=$dgangguan->gangguan;
+			$data['keterangan']=$dgangguan->keterangan;
+		}
+	return $data;
+	}
 	
 	public function insert(){
 		$kd_penyakit = $this->input->post('kd_penyakit');

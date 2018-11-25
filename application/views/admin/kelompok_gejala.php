@@ -33,8 +33,8 @@
                                  <td><?php echo $gejala->keterangan ?></td>
                                  <td><center>
                                   <div class="btn-group">
-                                      <a class="btn btn-default" href="<?php echo site_url('/kelompok_gejala/edit/').$gejala->id_klp_gejala ?>"><i class="fa fa-edit"></i></a>
-                                      <a class="btn btn-default" href="<?php echo site_url('/kelompok_gejala/hapus/').$gejala->id_klp_gejala ?>"><i class="icon_close_alt2"></i></a>
+                                      <a class="btn btn-xs btn-default" href="<?php echo site_url('/kelompok_gejala/edit/').$gejala->id_klp_gejala ?>"><i class="fa fa-edit"></i></a>
+                                      <a class="btn btn-xs btn-default" href="<?php echo site_url('/kelompok_gejala/hapus/').$gejala->id_klp_gejala ?>"><i class="icon_close_alt2"></i></a>
                                   </div></center>
                                   </td>
                               </tr> 

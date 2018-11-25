@@ -29,7 +29,7 @@
                                  <th>Kode Penyakit</th>
                                  <th>Nama Penyakit</th>
                                  <th>Tanggal Diagnosa</th>
-                                 <th>Hasil Diagnosa</th>
+                                 <th>Hasil Diagnosa (%)</th>
                                  <th><center>Aksi</center></th>
                                <?php 
                                   $no=1;
@@ -43,7 +43,7 @@
                                  <td><?php echo $hasilcf->kepercayaan ?></td>
                                  <td><center>
                                   <div class="btn-group">
-                                      <a class="btn btn-default" href="<?php echo site_url('/hasil_cf/hapus_cf/').$hasilcf->id_hasilcf ?>"><i class="icon_close_alt2"></i></a>
+                                      <a class="btn btn-xs btn-default" href="<?php echo site_url('/hasil_cf/hapus_cf/').$hasilcf->id_hasilcf ?>"><i class="icon_close_alt2"></i></a>
                                   </div></center>
                                   </td>
                               </tr> 

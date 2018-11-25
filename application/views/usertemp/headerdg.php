@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
 <title>SP Penyakit Ginjal</title>
-<link rel="icon" href="img/core-img/favicon.ico">
+<link rel="icon" href="<?php echo base_url()?>templates/niceadmin/img/1.png">
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="description" content="CareMed demo project">
@@ -15,37 +15,7 @@
 <link rel="stylesheet" type="text/css" href="<?php echo base_url()?>templates/caremed/plugins/OwlCarousel2-2.2.1/animate.css">
 <link rel="stylesheet" type="text/css" href="<?php echo base_url()?>templates/caremed/styles/main_styles.css">
 <link rel="stylesheet" type="text/css" href="<?php echo base_url()?>templates/caremed/styles/responsive.css">
-
-		<!-- <link href="<?php echo base_url()?>asset/be/css/bootstrap.min.css" rel="stylesheet" type="text/css" /> -->
-        <!-- font Awesome -->
-        <!-- <link href="<?php echo base_url()?>asset/be/css/font-awesome.min.css" rel="stylesheet" type="text/css" /> -->
-        <!-- Ionicons -->
-        <!-- <link href="<?php echo base_url()?>asset/be/css/ionicons.min.css" rel="stylesheet" type="text/css" /> -->
-        <!-- DATA TABLES -->
-        <!-- <link href="<?php echo base_url()?>asset/be/css/datatables/dataTables.bootstrap.css" rel="stylesheet" type="text/css" /> -->
-        <!-- Bootstrap Color Picker -->
-        <!-- <link href="<?php echo base_url()?>asset/be/css/colorpicker/bootstrap-colorpicker.min.css" rel="stylesheet" type="text/css" /> -->
-        <!-- Theme style -->
-        <!-- <link href="<?php echo base_url()?>asset/be/css/AdminLTE.css" rel="stylesheet" type="text/css" /> -->
-
-    	<!-- <link rel="stylesheet" type="text/css" href="<?php echo base_url()?>asset/be/js/wysiwyg/src/bootstrap-wysihtml5.css" /> -->
-
-    	<link rel="stylesheet" type="text/css" href="<?php echo base_url()?>asset/be/css/jquery.fileupload-ui.css" />
-		<script type='text/javascript' src='<?php echo base_url();?>asset/assets/js/jquery-1.8.2.min.js'></script>  -->
-        <script src="<?php echo base_url()?>asset/be/js/jquery-ui-1.10.3.min.js" type="text/javascript"></script>	
-    	<!-- bootstrap datepicker -->
-    	<link href="<?php echo base_url()?>asset/be/css/datepicker/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
-    	<!-- <script type="text/javascript">
-    		function printlayer(layer){
-    			var generator=window.open("name");
-    			var layertext= document.getElementById(layer);
-    			generator.document.write(layetext.innerHTML.replace("Print Me"));
-
-    			generator.document.close();
-    			generator.print();
-    			generator.close();
-    		}
-    	</script> -->
+<script type='text/javascript' src='<?php echo base_url();?>asset/assets/js/jquery-1.8.2.min.js'></script>
 </head>
 <body>
 
@@ -79,10 +49,11 @@
 						<div class="header_content d-flex flex-row align-items-center justify-content-start">
 							<nav class="main_nav ml-auto">
 								<ul>
-									<li><a href="<?php echo site_url() ?>/dashboard/index">Beranda</a></li>
-									<li><a href="<?php echo site_url() ?>/dashboard/informasi">Informasi</a></li>
-									<li><a href="<?php echo site_url() ?>/dashboard/tentang">Tentang</a></li>
-									<li><a href="<?php echo site_url() ?>/dashboard/diagnosa">Diagnosa</a></li>
+									<li><a href="<?php echo site_url() ?>dashboard/index">Beranda</a></li>
+									<li><a href="<?php echo site_url() ?>dashboard/informasi">Informasi</a></li>
+									<li><a href="<?php echo site_url() ?>dashboard/tentang">Tentang</a></li>
+									<li><a href="<?php echo site_url() ?>dashboard/diagnosa">Diagnosa CF</a></li>
+									<li><a href="<?php echo site_url() ?>Hitung">Diagnosa DS</a></li>
 									<?php 
 									if($this->session->userdata('is_login') == TRUE && $this->session->userdata('level') == 'pasien'){
 									?>
@@ -109,10 +80,10 @@
 								<div class="logo_content d-flex flex-column align-items-start justify-content-center">
 									<div class="logo_line"></div>
 									<div class="logo d-flex flex-row align-items-center justify-content-center">
-										<div class="logo_text">SP<span>Kidney</span></div>
+										<div class="logo_text">SP<span>Ginjal</span></div>
 										<div class="logo_box">+</div>
 									</div>
-									<div class="logo_sub">Sistem Pakar Penyakit<br><i>Ginjal</i></div>
+									<div class="logo_sub">Sistem Pakar <b>Penyakit<br>Ginjal</b></div>
 								</div>
 							</a>
 						</div>
@@ -138,7 +109,8 @@
 					<li class="menu_item menu_mm"><a href="<?php echo site_url() ?>/dashboard/index">Beranda</a></li>
 					<li class="menu_item menu_mm"><a href="<?php echo site_url() ?>/dashboard/informasi">Informasi</a></li>
 					<li class="menu_item menu_mm"><a href="<?php echo site_url() ?>/dashboard/tentang">Tentang</a></li>
-					<li class="menu_item menu_mm"><a href="<?php echo site_url() ?>/dashboard/diagnosa">Diagnosa</a></li>
+					<li class="menu_item menu_mm"><a href="<?php echo site_url() ?>/dashboard/diagnosa">Diagnosa CF</a></li>
+					<li class="menu_item menu_mm"><a href="<?php echo site_url() ?>/hitung">Diagnosa DS</a></li>
 					<?php 
 					if($this->session->userdata('is_login') == TRUE && $this->session->userdata('level') == 'pasien'){
 					?>
@@ -148,9 +120,9 @@
 					<?php } ?>
 				</ul>
 			</div>
-			<div class="menu_extra">
+			<!-- <div class="menu_extra">
 				<div class="menu_appointment"><a href="#">Request an Appointment</a></div>
 				<div class="menu_emergencies">For Emergencies: +563 47558 623</div>
-			</div>
+			</div> -->
 		</div>
 	</div>

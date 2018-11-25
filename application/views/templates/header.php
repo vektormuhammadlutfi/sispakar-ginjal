@@ -7,7 +7,7 @@
     <meta name="description" content="Creative - Bootstrap 3 Responsive Admin Template">
     <meta name="author" content="GeeksLabs">
     <meta name="keyword" content="Creative, Dashboard, Admin, Template, Theme, Bootstrap, Responsive, Retina, Minimal">
-    <link rel="shortcut icon" href="<?php echo base_url()?>templates/niceadmin/img/favicon.png">
+    <link rel="shortcut icon" href="<?php echo base_url()?>templates/niceadmin/img/1.png">
 
     <title>SP Penyakit Ginjal</title>
 
@@ -60,9 +60,9 @@
                     <li class="dropdown">
                         <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                             <span class="profile-ava">
-                                <img alt="" src="<?php echo base_url()?>templates/niceadmin/img/avatar1_small.jpg">
+                                <img style="width: 40px; height: 40px;" alt="logo" src="<?php echo base_url()?>templates/niceadmin/img/1.png">
                             </span>
-                            <span class="username">Admin</span>
+                            <span class="username"><?php echo $this->session->userdata('nama_pengguna') ?></span>
                             <b class="caret"></b>
                         </a>
                         <ul class="dropdown-menu extended logout">

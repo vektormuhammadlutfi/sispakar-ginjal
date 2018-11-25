@@ -14,6 +14,7 @@ class Penyakit extends CI_Controller {
 		$this->load->view('templates/index', $data);
 	}
 
+
 	public function create(){
 		if (isset($_POST['submit'])){
 			$this->Penyakit_model->insert();

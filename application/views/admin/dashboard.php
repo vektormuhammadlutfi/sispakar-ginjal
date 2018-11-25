@@ -7,8 +7,9 @@ main content start-->
 					<h3 class="page-header"><i class="fa fa-home"></i> Beranda</h3>
 					<ol class="breadcrumb">
 						<li><i class="fa fa-home"></i><a href="<?php echo site_url() ?>/home/index">Beranda</a></li>
-						<li><i class="fa fa-user"></i>Selamat datang Administrator</li>						  	
+						<li><i class="fa fa-user"></i>Selamat datang Administrator</li>	
 					</ol>
+                  </div>
 				</div>
 			</div>
 			

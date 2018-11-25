@@ -58,8 +58,8 @@
 					<div class="wrap-input100 validate-input" data-validate = "Valid umur is required: ex@abc.xyz">
 						<input class="input100" type="text" name="umur" placeholder="Usia" required/>
 					</div>
-					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-						<input class="input100" type="email" name="email" placeholder="Email" required/ >
+					<div class="wrap-input100 validate-input" data-validate = "Valid alamat is required: ex@abc.xyz">
+						<input class="input100" type="text" name="alamat" placeholder="Alamat" required/ >
 					</div>
 					<div class="wrap-input100 validate-input" data-validate = "Valid username is required: ex@abc.xyz">
 						<input class="input100" type="text" name="username" placeholder="Username" required/ >

@@ -35,8 +35,8 @@
                                  <td><?php echo $gejala->nama_gejala ?></td>
                                  <td><center>
                                   <div class="btn-group">
-                                      <a class="btn btn-default" href="<?php echo site_url('/gejala/edit/').$gejala->id ?>"><i class="fa fa-edit"></i></a>
-                                      <a class="btn btn-default" href="<?php echo site_url('/gejala/hapus/').$gejala->id ?>"><i class="icon_close_alt2"></i></a>
+                                      <a class="btn btn-xs btn-default" href="<?php echo site_url('/gejala/edit/').$gejala->id ?>"><i class="fa fa-edit"></i></a>
+                                      <a class="btn btn-xs btn-default" href="<?php echo site_url('/gejala/hapus/').$gejala->id ?>"><i class="icon_close_alt2"></i></a>
                                   </div></center>
                                   </td>
                               </tr> 

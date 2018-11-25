@@ -25,6 +25,7 @@ class Login_user extends CI_Controller {
 			if (!$check) {
 				redirect('login_user');
 			}else{
+
 				$data = array(
 						'username' => $username,
 						'password' => $password,
@@ -37,6 +38,11 @@ class Login_user extends CI_Controller {
 				redirect('dashboard/diagnosa');
 			}
 		}
+		// else{
+		// 	$url=base_url();
+		// 	echo $this->session->set_flashdata('msg','Username Atau Password Salah');
+		// 	redirect($url);
+		// }
 	}
 
 	public function logout()

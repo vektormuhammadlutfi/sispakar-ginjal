@@ -70,7 +70,7 @@ class Dashboard extends CI_Controller {
 									$combineCFmd =$combineCFmd + ($value2->md * (1 - $combineCFmd));
 									$combinehasil=$combineCFmb-$combineCFmd;
 				}
-				if($combinehasil>=0.5)
+				if($combinehasil)
 				{
 					$penyakit[$i]=array('kd_penyakit'=>$value->kd_penyakit,
 										'nama'=>$value->nama,
@@ -87,7 +87,7 @@ class Dashboard extends CI_Controller {
 
 			function cmp($a, $b)
 			{
-				return ($a["kepercayaan"] > $b["kepercayaan"]) ? -1 : 1;
+				return ($a["hasilcf"] > $b["hasilcf"]) ? -1 : 1;
 			}
 			usort($penyakit, "cmp");
 			$data["listPenyakit"] = $penyakit;
@@ -95,7 +95,7 @@ class Dashboard extends CI_Controller {
 				'id_user'=>$penyakit[0]['id_user'],
 				'kd_penyakit'=>$penyakit[0]['kd_penyakit'],
 				'nama_penyakit'=>$penyakit[0]['nama'],
-				'kepercayaan'=>$penyakit[0]['kepercayaan'],
+				'kepercayaan'=>$penyakit[0]['hasilcf'],
 			);
 			$this->db->insert('tb_hasilcf', $data_hasil);
 

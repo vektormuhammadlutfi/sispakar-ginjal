@@ -13,7 +13,7 @@
 							<div class="row">
 								<div class="col">
 									<div class="home_content_inner">
-										<div class="home_title"><h1>Kidney Disease Care</h1></div>
+										<div class="home_title"><h1>Sistem Pakar Penyakit Ginjal</h1></div>
 										<div class="home_text">
 											<p>Lakukan deteksi dini pada kondisi kesehatan Ginjal anda untuk mencegah peningkatan jumlah penderita penyakit Ginjal.</p>
 										</div>

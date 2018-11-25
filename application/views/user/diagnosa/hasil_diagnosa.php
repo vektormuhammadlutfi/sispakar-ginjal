@@ -1,4 +1,4 @@
-<div class="content" style="margin-top: 17%;" id="printTable">
+<div class="content" style="margin-top: 17%; margin-right: 5%; margin-left: 5%" id="printTable">
     <h3 style="text-align: center;">Hasil Analisis</h3>
     <div class="box box-warning" style="background: #ffffff; height: auto;">
         <div class="box-header with-border">
@@ -29,9 +29,9 @@
             <table id="tbl-list" class="table table-bordered table-striped">
                 <tr>
                     <th width="50px">No</th>
-                    <th>Penyakit</th>
-                    <th>Tingkat Kepercayaan</th>
-                    <th>Tingkat Ketidakpercayaan</th>
+                    <th>Nama Penyakit</th>
+                    <th>Nilai MB</th>
+                    <th>Nilai MD</th>
                     <th>Hasil CF</th>
                 </tr>
                 <tr>
@@ -58,7 +58,7 @@
                 <p>
                     <b>Nama Pasien : <?php echo $this->session->userdata('nama_pengguna') ?>
                     </b><br>
-                    Berdasarkan gejala yang diinput, Anda di prediksi mengidap penyakit <b><?php echo $listPenyakit[0]['nama'];?></b> dengan tingkat kepercayaan <b><?php echo $listPenyakit[0]['kepercayaan'];?> %</b> dikurang dengan tingkat ketidakpercayaan <b><?php echo $listPenyakit[0]['tidakpercaya']; ?> % </b>maka hasil perhitungan CF sebesar <b><?php echo $listPenyakit[0]['hasilcf']; ?> %. </b> <br/></p>
+                    Berdasarkan gejala yang diinput, Anda di prediksi mengidap penyakit <b><?php echo $listPenyakit[0]['nama'];?></b> dengan tingkat kepercayaan nilai MB <b><?php echo $listPenyakit[0]['kepercayaan'];?> %</b> dikurang dengan tingkat ketidakpercayaan nilai MD <b><?php echo $listPenyakit[0]['tidakpercaya']; ?> % </b>maka hasil perhitungan CF sebesar <b><?php echo $listPenyakit[0]['hasilcf']; ?> %. </b> <br/></p>
                 <p><h3>
                     Solusi
                 </h3><br>
@@ -72,8 +72,8 @@
         </div><!--box body-->
     </div><!--box-->
 </div> <!-- content -->
-        <div class="box-footer clearfix" style="padding-bottom: 3%; padding-left: 2%;"><br>
-            <a class="btn btn-sm btn-primary btn-flat" href="<?php echo site_url() ?>/dashboard/diagnosa">Deteksi Ulang</a>
+        <div class="box-footer clearfix" style="padding-bottom: 3%; padding-left: 5%;"><br>
+            <a class="btn btn-sm btn-primary" href="<?php echo site_url() ?>/dashboard/diagnosa"><span class="fa fa-refresh">Konsultasi Lagi</a>
             <button class="btn btn-sm btn-primary btn-flat" onclick >Cetak</button>
         </div>
 

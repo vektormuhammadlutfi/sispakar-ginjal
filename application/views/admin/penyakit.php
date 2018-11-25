@@ -24,7 +24,7 @@
                                  <th><center>Kode Penyakit</center></th>
                                  <th><center>Nama Penyakit</center></th>
                                  <th width="700px"><center>Solusi</center></th>
-                                 <th><center>Aksi</center></th>
+                                 <th width="200px"><center>Aksi</center></th>
                                <?php 
                                   $no=1;
                                   foreach ($penyakit_data as $penyakit) : ?>  
@@ -32,11 +32,12 @@
                                  <td><?php echo $no++ ?></td>
                                  <td><?php echo $penyakit->kd_penyakit ?></td>
                                  <td><?php echo $penyakit->nama ?></td>
-                                 <td><?php echo $penyakit->keterangan ?></td>
+                                 <td style="text-align: justify;"><?php echo $penyakit->keterangan ?></td>
                                  <td><center>
                                   <div class="btn-group">
-                                      <a class="btn btn-default" href="<?php echo site_url('/penyakit/edit/').$penyakit->id_p ?>"><i class="fa fa-edit"></i></a>
-                                      <a class="btn btn-default" href="<?php echo site_url('/penyakit/hapus/').$penyakit->id_p ?>"><i class="icon_close_alt2"></i></a>
+                                      <a class="btn btn-xs btn-default" href="<?=site_url("relasi/ubah/$penyakit->kd_penyakit")?>"> Gejala</a>
+                                      <a class="btn btn-xs btn-default" href="<?php echo site_url('/penyakit/edit/').$penyakit->id_p ?>"><i class="fa fa-edit"></i></a>
+                                      <a class="btn btn-xs btn-default" href="<?php echo site_url('/penyakit/hapus/').$penyakit->id_p ?>"><i class="icon_close_alt2"></i></a>
                                   </div></center>
                                   </td>
                               </tr> 

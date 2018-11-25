@@ -1,4 +1,4 @@
-<!--sidebar start-->
+<!-- sidebar start-->
       <aside>
           <div id="sidebar"  class="nav-collapse" style="background: #ffffff;">
               <!-- sidebar menu start-->
@@ -23,37 +23,44 @@
                   </li>
                   <li class="sub-menu" >
                       <a href="javascript:;" class="" style="color: #688A7E; background: #ffffff; ">
-                          <i class="fa fa-pencil" style="color: #688A7E;"></i>
-                          <span>Data Gejala</span>
+                          <i class="fa fa-cogs" style="color: #688A7E;"></i>
+                          <span>Data Aturan CF</span>
                           <span class="menu-arrow arrow_carrot-right"></span>
                       </a>
                       <ul class="sub">
                           <li><a style="color: #688A7E; background: #ffffff;" class="" href="<?php echo site_url() ?>/gejala">Gejala Penyakit</a></li>
                           <li><a style="color: #688A7E; background: #ffffff;" class="" href="<?php echo site_url() ?>/kelompok_gejala">Kelompok Gejala</a></li>
+                          <li><a style="color: #688A7E; background: #ffffff;" class="" href="<?php echo site_url() ?>/rule_cf">Nilai CF</a></li>
                       </ul>
                   </li>  
                   <li class="sub-menu">
                       <a href="javascript:;" class="" style="color: #688A7E; background: #ffffff;">
                           <i class="fa fa-cogs" style="color: #688A7E;"></i>
-                          <span>Data Aturan</span>
+                          <span>Data Aturan DS</span>
                           <span class="menu-arrow arrow_carrot-right"></span>
                       </a>
                       <ul class="sub">
-                          <li><a style="color: #688A7E; background: #ffffff;" class="" href="<?php echo site_url() ?>/rule_cf">Nilai CF</a></li>
-                          <li><a style="color: #688A7E; background: #ffffff;" class="" href="<?php echo site_url() ?>/rule_ds">Nilai DS</a></li>
+                          <li><a style="color: #688A7E; background: #ffffff;" class="" href="<?php echo site_url() ?>/gejalads">Bobot DS</a></li>
+                          <li><a style="color: #688A7E; background: #ffffff;" class="" href="<?php echo site_url() ?>/relasi">Relasi DS</a></li>
                       </ul>
                   </li>
-                  <li class="sub-menu">
+                  <li>
+                      <a class="" href="<?php echo site_url() ?>/hasil_cf" style="color: #688A7E; background:#ffffff;">
+                          <i class="fa fa-book" style="color: #688A7E; background: #ffffff;"></i>
+                          <span>Hasil Diagnosa </span>
+                      </a>
+                  </li>
+                  <!-- <li class="sub-menu">
                       <a href="javascript:;" class="" style="color: #688A7E; background: #ffffff;">
                           <i class="icon_documents_alt" style="color: #688A7E; "></i>
-                          <span>Data Hasil</span>
+                          <span>Hasil Diagnosa</span>
                           <span class="menu-arrow arrow_carrot-right"></span>
                       </a>
                       <ul class="sub">
                           <li><a style="color: #688A7E; background: #ffffff;" class="" href="<?php echo site_url() ?>/hasil_cf">Hasil CF</a></li>
                           <li><a style="color: #688A7E; background: #ffffff;" class="" href="<?php echo site_url() ?>/hasil_ds">Hasil DS</a></li>
                       </ul>
-                  </li>  
+                  </li>  --> 
                   <li>
                       <a class="" href="<?php echo site_url() ?>/users" style="color: #688A7E; background:#ffffff;">
                           <i class="fa fa-user" style="color: #688A7E; background: #ffffff;"></i>
@@ -64,4 +71,4 @@
               <!-- sidebar menu end-->
           </div>
       </aside>
-      <!--sidebar end-->
+      <!--sidebar end

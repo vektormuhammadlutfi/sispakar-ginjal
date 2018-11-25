@@ -35,8 +35,8 @@
                                  <td><?php echo $data['md'] ?></td>
                                  <td><center>
                                   <div class="btn-group">
-                                      <a class="btn btn-default" href="<?php echo site_url('/rule_cf/edit/').$data['gpid'] ?>"><i class="fa fa-edit"></i></a>
-                                      <a class="btn btn-default" href="<?php echo site_url('/rule_cf/hapus/').$data['gpid'] ?>"><i class="icon_close_alt2"></i></a>
+                                      <a class="btn btn-xs btn-default" href="<?php echo site_url('/rule_cf/edit/').$data['gpid'] ?>"><i class="fa fa-edit"></i></a>
+                                      <a class="btn btn-xs btn-default" href="<?php echo site_url('/rule_cf/hapus/').$data['gpid'] ?>"><i class="icon_close_alt2"></i></a>
                                   </div></center>
                                   </td>
                               </tr> 

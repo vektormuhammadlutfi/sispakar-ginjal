@@ -10,7 +10,7 @@ class Login_admin extends CI_Controller {
 	
 	public function index()
 	{
-		if($this->session->userdata('is_login') == TRUE && $this->session->userdata('level') == 'admin'){redirect('templates/index');}
+		if($this->session->userdata('is_login') == TRUE && $this->session->userdata('level') == 'admin'){redirect('home/index');}
 		$this->load->view('templates/index');
 	}
 
@@ -22,13 +22,15 @@ class Login_admin extends CI_Controller {
 
 			$check = $this->Login_model->checkLogin($username, $password);
 			if (!$check) {
-				redirect('dashboard/admin');
+				redirect('login_admin');
 			}else{
 				$data = array(
 						'username' => $username,
 						'password' => $password,
 						'is_login' => TRUE,
-						'level' => $check->level
+						'nama_pengguna' => $check->nama_pengguna,
+						'level' => $check->level,
+						'id_user' => $check->id
 				);
 				$this->session->set_userdata($data);
 				redirect('home/index');
@@ -39,7 +41,7 @@ class Login_admin extends CI_Controller {
 
 	public function logout()
 	{
-		$data = array('username','password','is_login', 'level');
+		$data = array('username','password','is_login', 'nama_pengguna', 'level');
 		$this->session->unset_userdata($data);
 		redirect('dashboard/admin');	
 	}

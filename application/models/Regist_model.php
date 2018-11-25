@@ -8,7 +8,7 @@ class Regist_model extends CI_Model {
 		$nama_pengguna = $this->input->post('nama_pengguna');
 		$jk = $this->input->post('jk');
 		$umur = $this->input->post('umur');
-		$email = $this->input->post('email');
+		$alamat = $this->input->post('alamat');
 		$username = $this->input->post('username');
 		$password = md5($this->input->post('password'));
 		
@@ -17,7 +17,7 @@ class Regist_model extends CI_Model {
 					'nama_pengguna'=>$nama_pengguna,
 					'jk'=>$jk,
 					'umur'=>$umur,
-					'email'=>$email,
+					'alamat'=>$alamat,
 					'username'=>$username,
 					'password'=>$password,
 					'level' => 'pasien'

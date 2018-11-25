@@ -4,9 +4,13 @@ class Gejala_model extends CI_Model {
 
 	public function get_gejala()
 	{
-		// $query = $this->db->query("SELECT * FROM tb_gejala");
-		// return $query->result_array();
 		return $this->db->query("SELECT * FROM tb_gejala JOIN tb_klp_gejala on tb_klp_gejala.id_klp_gejala = tb_gejala.id_klp_gejala")->result();
+	}
+
+	function all_gejala(){
+	$query=$this->db->get("tb_gejalads");
+	
+	return $query;
 	}
 
 	public function insert(){
@@ -55,6 +59,11 @@ class Gejala_model extends CI_Model {
 
 	function get_list_by_id($id){
          $sql = "select id,kd_gejala,nama_gejala from tb_gejala where id in (".$id.")";
+         return $this->db->query($sql);
+     }
+
+     function get_list_by_idds($id){
+         $sql = "select id,kd_gejala,nm_gejala,bobot from tb_gejalads where id in (".$id.")";
          return $this->db->query($sql);
      }
 
