@@ -73,17 +73,28 @@ class Rulecf_model extends CI_Model {
 	}
 
 	function get_by_gejala($gejala){
-         $sql = "select distinct id_penyakit,p.kd_penyakit,p.nama,p.keterangan from tb_rulecf gp inner join tb_penyakit p on gp.id_penyakit=p.id_p where id_gejala in (".$gejala.") order by id_penyakit,id_gejala";
+		$kd=  "'" . str_replace(",", "','", $gejala) . "'";
+         $sql = "select distinct id_penyakit,p.kd_penyakit,p.nama,p.keterangan from tb_rulecf gp inner join tb_penyakit p on gp.id_penyakit=p.id_p inner join tb_gejala on gp.id_gejala = tb_gejala.id where tb_gejala.kd_gejala in (".$kd.") order by id_penyakit,id_gejala";
          return $this->db->query($sql);
      }
 
      function get_gejala_by_penyakit($id,$gejala=null){
-         $sql = "select distinct id_gejala,mb,md from tb_rulecf where id_penyakit=".$id;
+		$kd=  "'" . str_replace(",", "','", $gejala) . "'";
+         $sql = "select distinct id_gejala,mb,md from tb_rulecf inner join tb_gejala on tb_rulecf.id_gejala = tb_gejala.id where id_penyakit=".$id;
          if($gejala!=null)
-            $sql=$sql." and id_gejala in (".$gejala.")";
+            $sql=$sql." and tb_gejala.kd_gejala in (".$kd.")";
         $sql=$sql." order by id_gejala";
          return $this->db->query($sql);
      }
+
+  //     function get_gejala_by_penyakit($id,$gejala=null){
+		// $kd=  "'" . str_replace(",", "','", $gejala) . "'";
+  //        $sql = "select distinct id_gejala,mb,md from tb_rulecf where id_penyakit=".$id;
+  //        if($gejala!=null)
+  //           $sql=$sql." and id_gejala in (".$gejala.")";
+  //       $sql=$sql." order by id_gejala";
+  //        return $this->db->query($sql);
+  //    }
 
      public function getgejala()
 	{

@@ -61,9 +61,19 @@ class Gejala_model extends CI_Model {
 	}
 
 	function get_list_by_id($id){
-         $sql = "select id,kd_gejala,nama_gejala from tb_gejala where id in (".$id.")";
+		$kd=  "'" . str_replace(",", "','", $id) . "'";
+         $sql = "select id,kd_gejala,nama_gejala from tb_gejala where kd_gejala in (".$kd.")";
          return $this->db->query($sql);
      }
+
+     // function get_list_by_id($id){
+     // 	//a
+     // 	$arr = array();
+     // 	foreach ($id as $key) {
+     // 		$arr[] = $this->db->query("SELECT * FROM tb_gejala WHERE kd_gejala= '".$key."'  ")->result();
+     // 	}
+     // 	return $arr;
+     // }
 
      function get_list_by_idds($id){
          $sql = "select id,kd_gejala,nm_gejala,bobot from tb_gejalads where id in (".$id.")";

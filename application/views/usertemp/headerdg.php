@@ -52,8 +52,8 @@
 									<li><a href="<?php echo site_url() ?>dashboard/index">Beranda</a></li>
 									<li><a href="<?php echo site_url() ?>dashboard/informasi">Informasi</a></li>
 									<li><a href="<?php echo site_url() ?>dashboard/tentang">Tentang</a></li>
-									<li><a href="<?php echo site_url() ?>dashboard/diagnosa">Diagnosa CF</a></li>
-									<li><a href="<?php echo site_url() ?>Hitung">Diagnosa DS</a></li>
+									<li><a href="<?php echo site_url() ?>dashboard/diagnosa">Diagnosa</a></li>
+									<!-- <li><a href="<?php echo site_url() ?>Hitung">Diagnosa DS</a></li> -->
 									<?php 
 									if($this->session->userdata('is_login') == TRUE && $this->session->userdata('level') == 'pasien'){
 									?>

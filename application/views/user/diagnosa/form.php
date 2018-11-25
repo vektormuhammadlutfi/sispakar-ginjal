@@ -4,7 +4,7 @@
     <div class="row d-flex justify-content-center">
       <div class="menu-content pb-60 col-lg-6">
         <div class="title text-center">
-          <h2 style="margin-bottom: 0px;"><br>Diagnosa Certainty Factor</h2><br>
+          <h2 style="margin-bottom: 0px;"><br>Diagnosa Certainty Factor dan Dempster Shafer</h2><br>
           <p>Silahkan pilih gejala yang dirasakan...</p><br>
         </div>
       </div>
@@ -17,7 +17,7 @@
                     $this->load->model(array('Gejala_model'));
                     $listGejala = $this->Gejala_model->get_by_kelompok($value->id_klp_gejala);
                     foreach($listGejala->result() as $value2){?>
-          <input type="checkbox" name="gejala[]" value="<?php echo $value2->id?>" > <?php echo $value2->kd_gejala." - ".$value2->nama_gejala?> <br>
+          <input type="checkbox" name="gejala[<?php echo $value2->kd_gejala ?>]" value="<?php echo $value2->kd_gejala?>" > <?php echo $value2->kd_gejala." - ".$value2->nama_gejala?> <br>
         <br>
         <?php }?>
       <?php } ?>
