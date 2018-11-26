@@ -4,7 +4,7 @@
     <div class="row d-flex justify-content-center">
       <div class="menu-content pb-60 col-lg-6">
         <div class="title text-center">
-          <h2 style="margin-bottom: 0px;"><br>Diagnosa Certainty Factor dan Dempster Shafer</h2><br>
+          <h3 style="margin-bottom: 0px;"><br>Diagnosa Certainty Factor dan Dempster Shafer</h3><br>
           <p>Silahkan pilih gejala yang dirasakan...</p><br>
         </div>
       </div>
