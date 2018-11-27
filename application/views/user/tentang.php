@@ -10,7 +10,7 @@
 				<div class="row">
 					<div class="col">
 						<div class="home_content">
-							<div class="home_title">Tentang <span>Kidney Care</span></div>
+							<div class="home_title">Tentang <span>Sistem Pakar</span></div>
 							<div class="breadcrumbs">
 								<ul>
 									<li><a href="<?php echo site_url() ?>/dashboard/index">Beranda</a></li>
@@ -36,6 +36,24 @@
 					<div class="about_text">
 						<p style="text-align: justify;">Pistem pakar adalah sebuah sistem yang kinerjanya mengadopsi keahlian yang dimiliki seorang pakar dalam bidang tertentu kedalam sistem atau program komputer yang disajikan dengan tampilan yang dapat digunakan oleh pengguna yang bukan seorang pakar sehingga dengan sistem tersebut pengguna dapat membuat sebuah keputusan atau menentukan kebijakan layaknya seorang pakar.</p>
 						<p style="text-align: justify;">Tujuan dari sistem pakar adalah untuk memindahkan pengetahuan dari seorang ahli atau sumber keahlian lain ke dalam komputer dan kemudian memindahkan dari komputer kepada user yang tidak ahli.</p>
+					</div><br><br><br>
+					<div class="section_title"><h2>Cara Menggunakan Aplikasi Sistem Pakar</h2></div>
+					<div class="about_text">
+						<h3><i class="fa fa-home"></i> Beranda</h3>
+						<p style="text-align: justify;">Klik Menu Beranda untuk mendapatkan informasi tentang apa itu penyakit ginjal dan penjelasannya, proses diagnosis penyakit ginjal, dan informasi makanan yang cocok untuk penderita penyakit ginjal.</p><br>
+						<h3><i class="fa fa-book"></i> Informasi</h3>
+						<p style="text-align: justify;">Klik Menu Informasi untuk mendapatkan informasi tentang penyaki ginjal dan jenis-jenis penyakit ginjal yang terdapat pada aplikasi sistem pakar diagnosa penyakit ginjal.</p><br>
+						<h3><i class="fa fa-tint"></i> Diagnosa</h3>
+						<p style="text-align: justify;">Klik Menu Diagnosa untuk melakukan diagnosa penyakit dengan terlebih dahulu melakukan login, jika belum memiliki akun maka silahkan melakukan registrasi dengan mengklik link yang ada dibawah tombol login.</p><br>
+						<h3><i class="fa fa-key"></i> Login</h3>
+						<p style="text-align: justify;">Klik Login untuk melakukan diagnosa, Anda dapat melakukan login kapan pun untuk melakukan diagnosa jika sudah memiliki akun yang terdaftar pada sistem.</p><br>
+					</div>
+					<div class="section_title"><h2>Hal yang dilakukan Setelah Login</h2></div>
+					<div class="about_text">
+						<h3><i class="fa fa-tint"></i> Diagnosa</h3>
+						<p style="text-align: justify;">Setelah anda login, silahkan melakukan diagnosa dengan memilih gejala-gejala yang ada, kemudian lihat hasil diagnosa, anda juga bisa mencetak hasil diagnosa atau kembali melakukan diagnosa ulang penyakit.</p><br>
+						<h3><i class="fa fa-lock"></i> Log Out</h3>
+						<p style="text-align: justify;">Klik Log Out setelah anda selesai menggunakan sistem.</p><br>
 					</div>
 				</div>
 
@@ -57,6 +75,19 @@
 						<div class="box_text">pakar adalah seseorang yang memiliki keahlian tertentu pada bidang ilmu tertentu yang dapat memberikan suatu keputusan pada permasalahan tertentu.</div>
 					</div>
 
+					<!-- Box -->
+					<div class="box working_hours">
+						<div class="box_icon d-flex flex-column align-items-start justify-content-center"><div style="width:29px; height:29px;"><img src="<?php echo base_url()?>templates/caremed/images/alarm-clock.svg" alt=""></div></div>
+						<div class="box_title">Jaga Pola Hidup Sehat</div>
+						<div class="box_text" style="text-align: justify;">Jaga pola hidup sehat anda dengan rutin berolahraga, mengatur jadwal olahraga minimal 2x dalam satu minggu, serta konsumsi air putih yang cukup.</div>
+					</div>
+
+					<!-- Box -->
+					<div class="box box_appointments">
+						<div class="box_icon d-flex flex-column align-items-start justify-content-center"><div style="width: 29px; height:29px;"><img src="<?php echo base_url()?>templates/caremed/images/phone-call.svg" alt=""></div></div>
+						<div class="box_title">Konsultasikan Kesehatan</div>
+						<div class="box_text" style="text-align: justify;">Rutin melakukan konsultasi kesehatan minimal 1x dalam satu tahun untuk mengetahui kemungkinan penyakit yang anda derita.</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -64,7 +95,7 @@
 
 	<!-- Team -->
 
-	<div class="team">
+	<div class="team" style="padding-top: 1%;">
 		<div class="container">
 			<div class="row">
 				<div class="col">

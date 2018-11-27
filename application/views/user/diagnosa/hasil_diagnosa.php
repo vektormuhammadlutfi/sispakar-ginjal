@@ -70,6 +70,8 @@
                 </p>
             <?php }?>
             <hr>
+        </div>
+    </div>
             <?php
                 $selected = (array) $_POST['gejala'];
                 $this->session->set_userdata('gejala', $selected);

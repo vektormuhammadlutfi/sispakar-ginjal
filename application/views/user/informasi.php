@@ -10,7 +10,7 @@
 				<div class="row">
 					<div class="col">
 						<div class="home_content">
-							<div class="home_title">Informasi <span>Kidney Care</span></div>
+							<div class="home_title">Informasi <span>Sistem Pakar</span></div>
 							<div class="breadcrumbs">
 								<ul>
 									<li><a href="<?php echo site_url() ?>/dashboard/index">Beranda</a></li>
