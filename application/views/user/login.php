@@ -4,28 +4,28 @@
 	<title>Login | SP penyakit Ginjal</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-<!--===============================================================================================-->	
+	<!--===============================================================================================-->	
 	<link rel="icon" type="image/png" href="<?php echo base_url()?>templates/logintemp/images/icons/favicon.ico"/>
-<!--===============================================================================================-->
+	<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url()?>templates/logintemp/vendor/bootstrap/<?php echo base_url()?>templates/logintemp/css/bootstrap.min.css">
-<!--===============================================================================================-->
+	<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url()?>templates/logintemp/fonts/font-awesome-4.7.0/<?php echo base_url()?>templates/logintemp/css/font-awesome.min.css">
-<!--===============================================================================================-->
+	<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url()?>templates/logintemp/fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
-<!--===============================================================================================-->
+	<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url()?>templates/logintemp/vendor/animate/animate.css">
-<!--===============================================================================================-->	
+	<!--===============================================================================================-->	
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url()?>templates/logintemp/vendor/css-hamburgers/hamburgers.min.css">
-<!--===============================================================================================-->
+	<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url()?>templates/logintemp/vendor/animsition/<?php echo base_url()?>templates/logintemp/css/animsition.min.css">
-<!--===============================================================================================-->
+	<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url()?>templates/logintemp/vendor/select2/select2.min.css">
-<!--===============================================================================================-->	
+	<!--===============================================================================================-->	
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url()?>templates/logintemp/vendor/daterangepicker/daterangepicker.css">
-<!--===============================================================================================-->
+	<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url()?>templates/logintemp/css/util.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url()?>templates/logintemp/css/main.css">
-<!--===============================================================================================-->
+	<!--===============================================================================================-->
 </head>
 <?php $this->load->view('usertemp/header') ?>
 
@@ -81,21 +81,21 @@
 	</div>
 
 	
-<!--===============================================================================================-->
+	<!--===============================================================================================-->
 	<script src="<?php echo base_url()?>templates/logintemp/vendor/jquery/jquery-3.2.1.min.js"></script>
-<!--===============================================================================================-->
+	<!--===============================================================================================-->
 	<script src="<?php echo base_url()?>templates/logintemp/vendor/animsition/<?php echo base_url()?>templates/logintemp/js/animsition.min.js"></script>
-<!--===============================================================================================-->
+	<!--===============================================================================================-->
 	<script src="<?php echo base_url()?>templates/logintemp/vendor/bootstrap/<?php echo base_url()?>templates/logintemp/js/popper.js"></script>
 	<script src="<?php echo base_url()?>templates/logintemp/vendor/bootstrap/<?php echo base_url()?>templates/logintemp/js/bootstrap.min.js"></script>
-<!--===============================================================================================-->
+	<!--===============================================================================================-->
 	<script src="<?php echo base_url()?>templates/logintemp/vendor/select2/select2.min.js"></script>
-<!--===============================================================================================-->
+	<!--===============================================================================================-->
 	<script src="<?php echo base_url()?>templates/logintemp/vendor/daterangepicker/moment.min.js"></script>
 	<script src="<?php echo base_url()?>templates/logintemp/vendor/daterangepicker/daterangepicker.js"></script>
-<!--===============================================================================================-->
+	<!--===============================================================================================-->
 	<script src="<?php echo base_url()?>templates/logintemp/vendor/countdowntime/countdowntime.js"></script>
-<!--===============================================================================================-->
+	<!--===============================================================================================-->
 	<script src="<?php echo base_url()?>templates/logintemp/js/main.js"></script>
 
 </body>

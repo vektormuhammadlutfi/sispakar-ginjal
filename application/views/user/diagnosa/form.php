@@ -4,13 +4,13 @@
     <div class="row d-flex justify-content-center">
       <div class="menu-content pb-60 col-lg-6">
         <div class="title text-center">
-          <h3 style="margin-bottom: 0px;"><br>Diagnosa Certainty Factor dan Dempster Shafer</h3><br>
-          <p>Silahkan pilih gejala yang dirasakan...</p><br>
+          <h3 style="margin-bottom: 0px; color: #283290;"><br>Diagnosa Certainty Factor dan Dempster Shafer</h3><br>
+          <p style="color: #20D34A;">Silahkan pilih gejala yang dirasakan...</p><br>
         </div>
       </div>
     </div>
     <div class="row d-flex justify-content-center">
-      <div class="col-md-6 col-md-offset-2" >
+      <div class="col-md-6 col-md-offset-2" style="color: #000000;">
         <?php foreach($listKelompok->result() as $value){?>
         <span style="font-weight: bold;" ><?php echo $value->nama?></span><br>
           <?php

@@ -76,7 +76,7 @@
 						<div class="dept_image"><img src="<?php echo base_url()?>templates/caremed/images/dept_1.jpg" alt=""></div>
 						<div class="dept_content text-center">
 							<div class="dept_title">Biopsi ginjal</div>
-							<div class="dept_subtitle">Biopsi dilakukan dengan mengambil sampel kecil dari jaringan ginjal. Deteksi kerusakan ginjal kemudian dilakukan dengan memeriksa sel-sel ini dengan mikroskop.</div>
+							<div class="dept_subtitle" style="text-align: justify; padding: 6px 6px;">Biopsi dilakukan dengan mengambil sampel kecil dari jaringan ginjal. Deteksi kerusakan ginjal kemudian dilakukan dengan memeriksa sel-sel ini dengan mikroskop.</div>
 						</div>
 					</div>
 				</div>
@@ -87,7 +87,7 @@
 						<div class="dept_image"><img src="<?php echo base_url()?>templates/caremed/images/dept_2.jpg" alt=""></div>
 						<div class="dept_content text-center">
 							<div class="dept_title">Pemindaian</div>
-							<div class="dept_subtitle">Pemindaian digunakan untuk mengetahui penyumbatan tidak normal dalam aliran urin. Proses dilakukan dengan alat seperti USG, computerised tomography (CT) scan, atau pemindaian magnetic resonance imaging (MRI). </div>
+							<div class="dept_subtitle" style="text-align: justify; padding: 6px 6px;">Pemindaian digunakan untuk mengetahui penyumbatan tidak normal dalam aliran urin. Proses dilakukan dengan alat seperti USG, computerised tomography (CT) scan, atau pemindaian magnetic resonance imaging (MRI). </div>
 						</div>
 					</div>
 				</div>
@@ -98,7 +98,7 @@
 						<div class="dept_image"><img src="<?php echo base_url()?>templates/caremed/images/dept_3.jpg" alt=""></div>
 						<div class="dept_content text-center">
 							<div class="dept_title">Laju Filtrasi Glomerulus</div>
-							<div class="dept_subtitle">LFG yaitu pengukuran terhadap seberapa baik ginjal bekerja berdasarkan jumlah kotoran yang berhasil disaring ginjal dari darah. Hasil perkiraan LGF atau eGFR normal adalah 90 ml cairan kotoran per menit.</div>
+							<div class="dept_subtitle" style="text-align: justify; padding: 6px 6px;">LFG yaitu pengukuran terhadap seberapa baik ginjal bekerja berdasarkan jumlah kotoran yang berhasil disaring ginjal dari darah. Hasil perkiraan LGF atau eGFR normal adalah 90 ml cairan kotoran per menit.</div>
 						</div>
 					</div>
 				</div>

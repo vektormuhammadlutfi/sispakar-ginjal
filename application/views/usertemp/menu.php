@@ -15,7 +15,7 @@
 									<div class="home_content_inner">
 										<div class="home_title"><h1>Sistem Pakar Penyakit Ginjal</h1></div>
 										<div class="home_text">
-											<p>Lakukan deteksi dini pada kondisi kesehatan Ginjal anda untuk mencegah peningkatan jumlah penderita penyakit Ginjal.</p>
+											<p style="color: #283290; padding-left: 8%; text-align: justify;">Lakukan deteksi dini pada kondisi kesehatan Ginjal anda untuk mencegah peningkatan jumlah penderita penyakit Ginjal.</p>
 										</div>
 									</div>
 								</div>
