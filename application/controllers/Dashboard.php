@@ -53,14 +53,10 @@ class Dashboard extends CI_Controller {
 
 			//hitung
 			$listPenyakit = $this->Rulecf_model->get_by_gejala($gejala);
-
-			
 			$penyakit = array();
 			$i=0;
 			foreach($listPenyakit->result() as $value){
 				$listGejala = $this->Rulecf_model->get_gejala_by_penyakit($value->id_penyakit,$gejala);
-				
-			
 
 				$combineCFmb=0;
 				$combineCFmd=0;
@@ -107,29 +103,29 @@ class Dashboard extends CI_Controller {
 			);
 
 			$DIAGNOSA = $this->diagnosa_model->tampil(); 
-	        $GEJALA = $this->gejalads_model->tampil(); 
-	        $RELASI = $this->relasi_model->tampil();     
-	        
-	                  
-	        $data['diagnosa'] = array();
-	        foreach($DIAGNOSA as $row){
-	            $data['diagnosa'][$row->kd_penyakit] = $row->nama;
-	        }
-	              
-	        $data['gejala'] = array();
-	        foreach($GEJALA as $row){
-	            $data['gejala'][$row->kd_gejala] = $row;
-	        }
-	        $data['relasi'] = array();
-	        foreach ($RELASI as $row) {                                
-	            $data['relasi'][$row->kd_gejala][] = $row->kd_penyakit;                
-	        }    
+			$GEJALA = $this->gejalads_model->tampil(); 
+			$RELASI = $this->relasi_model->tampil();     
+
+
+			$data['diagnosa'] = array();
+			foreach($DIAGNOSA as $row){
+				$data['diagnosa'][$row->kd_penyakit] = $row->nama;
+			}
+
+			$data['gejala'] = array();
+			foreach($GEJALA as $row){
+				$data['gejala'][$row->kd_gejala] = $row;
+			}
+			$data['relasi'] = array();
+			foreach ($RELASI as $row) {                                
+				$data['relasi'][$row->kd_gejala][] = $row->kd_penyakit;                
+			}    
 
 
 			$this->db->insert('tb_hasilcf', $data_hasil);
 
 			$this->load->view('user/diagnosa/index', $data);
-	       
+
 		}
 	}
 }
