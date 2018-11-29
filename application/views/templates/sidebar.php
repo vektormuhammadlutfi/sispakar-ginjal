@@ -45,13 +45,13 @@
 
                       </ul>
                   </li>
-                  <li>
+                  <!-- <li>
                       <a class="" href="<?php echo site_url() ?>/hasil_cf" style="color: #688A7E; background:#ffffff;">
                           <i class="fa fa-book" style="color: #688A7E; background: #ffffff;"></i>
                           <span>Hasil Diagnosa </span>
                       </a>
-                  </li>
-                  <!-- <li class="sub-menu">
+                  </li> -->
+                  <li class="sub-menu">
                       <a href="javascript:;" class="" style="color: #688A7E; background: #ffffff;">
                           <i class="icon_documents_alt" style="color: #688A7E; "></i>
                           <span>Hasil Diagnosa</span>
@@ -61,7 +61,7 @@
                           <li><a style="color: #688A7E; background: #ffffff;" class="" href="<?php echo site_url() ?>/hasil_cf">Hasil CF</a></li>
                           <li><a style="color: #688A7E; background: #ffffff;" class="" href="<?php echo site_url() ?>/hasil_ds">Hasil DS</a></li>
                       </ul>
-                  </li>  --> 
+                  </li>  
                   <li>
                       <a class="" href="<?php echo site_url() ?>/users" style="color: #688A7E; background:#ffffff;">
                           <i class="fa fa-user" style="color: #688A7E; background: #ffffff;"></i>

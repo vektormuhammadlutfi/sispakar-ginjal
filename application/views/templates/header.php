@@ -49,7 +49,7 @@
             </div>
 
             <!--logo start-->
-            <a href="<?php echo site_url() ?>/home" class="logo">SP <span class="lite">Ginjal</span></a>
+            <a href="<?php echo site_url() ?>/home" class="logo"><b style="color: #03C1FF;">SP<span class="lite" > Ginjal</b></span></a>
             <!--logo end-->
 
             <div class="top-nav notification-row">                

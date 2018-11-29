@@ -4,7 +4,7 @@ main content start-->
               <!--overview start-->
 			  <div class="row">
 				<div class="col-lg-12">
-					<h3 class="page-header"><i class="fa fa-home"></i> Beranda</h3>
+					<h3 class="page-header"><i class="fa fa-home"></i><b> Beranda</b></h3>
 					<ol class="breadcrumb">
 						<li><i class="fa fa-home"></i><a href="<?php echo site_url() ?>/home/index">Beranda</a></li>
 						<li><i class="fa fa-user"></i>Selamat datang Administrator</li>	
@@ -33,39 +33,43 @@ main content start-->
 					                  <ul class="timeline">
 					                <!-- timeline time label -->
 					                <li class="time-label">
-					                  <span class="bg-red">
-					                    Cara Menggunakan Aplikasi :
-					                  </span>
-					                </li><br>
+					                  <h4 class="bg-red">
+					                    <b style="color: #00A0DF;">Cara Menggunakan Aplikasi :</b>
+					                  </h4>
+					                </li>
+					                <li>
+					                  <div class="timeline-item">
+					                    <div class="timeline-body" style="text-align: justify;">
+					                    <span style="color: red;">Note :</span><br>
+					                      Metode Algoritma yang digunakan pada aplikasi ini adalah Certainty Factor (CF) dan Dempster shafer (DS), metode algoritma berfungsi untuk memproses dan menyelesaikan masalah yang ada. Sehingga mengelolah basis pengetahuan dengan baik dan benar akan memberikan hasil diagnosa yang lebih akurat.
+					                    </div>
+					                </li>
 					                <!-- /.timeline-label -->
 					                <!-- timeline item -->
 					                <li>
-					                  <i class="fa fa-home"></i>
 					                  <div class="timeline-item">
-					                    <h3 class="timeline-header"><a href="#">Beranda</a></h3>
-					                    <div class="timeline-body">
+					                    <h3><i class="fa fa-home"></i><b> Beranda</b></h3>
+					                    <div class="timeline-body" style="text-align: justify;">
 					                      Admin dapat mengelolah data gejala, mengelolah data kelompok gejala, mengelolah data penyakit, mengelolah data aturan,<br> mengelolah data hasil diagnosa, dan mengelolah data user pada sistem ini.
-					                      Silahkan pilih menu disamping, untuk mengelola <br> basis pengetahuan dari data penyakit, gejala, dan aturan pada masing-masing metode.
+					                      Silahkan pilih menu disamping, untuk mengelola <br> basis pengetahuan dari data penyakit, gejala, dan aturan pada masing-masing metode yang digunakan.
 					                    </div>
-					                </li><br>
+					                </li>
 					                <!-- END timeline item -->
 					                <!-- timeline item -->
 					                <li>
-					                  <i class="icon_documents_alt"></i>
 					                  <div class="timeline-item">
-					                    <h3 class="timeline-header"><a href="#">Mengolah Data</a></h3>
+					                    <h3><i class="fa fa-book"></i><b> Mengelolah Data</b></h3>
 					                    <div class="timeline-body">
 					                      Klik menu disamping untuk mengolah Data.<br>
 					                      klik <i class="fa fa-plus"></i> untuk menambah Data.<br>
 					                      klik <i class="fa fa-edit"></i> untuk mengubah Data.<br>
 					                      klik <i class="icon_close_alt2"></i> untuk menghapus Data.<br>
 					                    </div>
-					                </li><br>
+					                </li>
 					                <!-- END timeline item -->
 					                <li>
-					                  <i class="fa fa-key"></i>
 					                  <div class="timeline-item">
-					                    <h3 class="timeline-header"><a href="#">Log Out</a></h3>
+					                    <h3><i class="fa fa-key"></i><b> Log Out</b></h3>
 					                    <div class="timeline-body">
 					                    	Pastikan untuk selalu Log Out <br> sebelum menutup browser demi keamanan data.<br>
 					                      	Klik <i class="fa fa-key"></i> pada header untuk Log Out.<br>
