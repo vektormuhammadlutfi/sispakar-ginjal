@@ -49,17 +49,17 @@
 							<div class="header_content d-flex flex-row align-items-center justify-content-start">
 								<nav class="main_nav ml-auto">
 									<ul>
-										<li><a href="<?php echo site_url() ?>dashboard/index">Beranda</a></li>
-										<li><a href="<?php echo site_url() ?>dashboard/informasi">Informasi</a></li>
-										<li><a href="<?php echo site_url() ?>dashboard/tentang">Tentang</a></li>
-										<li><a href="<?php echo site_url() ?>dashboard/diagnosa">Diagnosa</a></li>
+										<li><a href="<?php echo site_url() ?>dashboard/index"><b>Beranda</b></a></li>
+										<li><a href="<?php echo site_url() ?>dashboard/informasi"><b>Informasi</b></a></li>
+										<li><a href="<?php echo site_url() ?>dashboard/tentang"><b>Tentang</b></a></li>
+										<li><a href="<?php echo site_url() ?>dashboard/diagnosa"><b>Diagnosa</b></a></li>
 										<!-- <li><a href="<?php echo site_url() ?>Hitung">Diagnosa DS</a></li> -->
 										<?php 
 										if($this->session->userdata('is_login') == TRUE && $this->session->userdata('level') == 'pasien'){
 											?>
-											<li><a href="<?php echo site_url() ?>/login_user/logout"><i class="fa fa-user"></i> Hai, <?php echo $this->session->userdata('nama_pengguna') ?>, Logout </a></li>
+											<li><a href="<?php echo site_url() ?>/login_user/logout"><i class="fa fa-user"></i> Hai, <?php echo $this->session->userdata('nama_pengguna') ?>,<b> Logout</b></a></li>
 											<?php } else{ ?>
-											<li><a href="<?php echo site_url() ?>/login_user"><i class="fa fa-user"></i> Login </a></li>
+											<li><a href="<?php echo site_url() ?>/login_user"><i class="fa fa-user"></i><b> Login</b></a></li>
 											<?php } ?>
 										</ul>
 									</nav>

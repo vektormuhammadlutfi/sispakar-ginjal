@@ -54,7 +54,7 @@
             <h3 class="box-title">Kesimpulan</h3>
             <hr style="width: 10%;">
         </div><!-- /.box-header -->
-        <div class="box-body"  style="text-align: justify; padding-right: 2%; ">
+        <div class="box-body"  style="text-align: justify; padding-right: 2%;">
             <?php if(sizeof($listPenyakit)>0) { ?>
             <p>
                 <b>Nama Pengunjung : <?php echo $this->session->userdata('nama_pengguna') ?>
@@ -200,7 +200,7 @@
         <div class="box-header with-border">
             <h3 class="box-title">Kesimpulan</h3>
         </div><!-- /.box-header -->
-        <div class="panel-body">
+        <div class="panel-body" style="text-align: justify; padding-right: 2%;">
             <b>Nama Pengunjung : <?php echo $this->session->userdata('nama_pengguna') ?>
             </b><br>
             <p>Berdasarkan gejala yang terpilih maka anda di prediksi mengidap penyakit dengan diagnosa paling akurat adalah <strong><?=implode(', ', $diags)?></strong> dengan tingkat kepercayaan <strong><?=round($best['value'] * 100) ?>%</strong> klik untuk<a href="<?=site_url('hitung/solusi')?>" style="color: #696969;"><b> Solusi Umum Penyakit</b></a>.</p>
