@@ -1,3 +1,10 @@
+<?php
+//variabel global untuk simpan hasil df
+
+$hasil_akhir = array();
+$diagnosa_akhir = array();
+
+?>
 <div class="content" style="background: #283290; margin-top: 17%; margin-right: 5%; margin-left: 5%" id="printTable">
     <h3 style="text-align: center; color: #FFFFFF;">Hasil Analisis CF</h3>
     <div class="box box-warning" style="background: #ffffff; height: auto;">
@@ -147,6 +154,7 @@
                         );
 
                         $hasil = $new_hasil;
+                        $hasil_akhir = $new_hasil;
                         ?>
                         <tr>
                             <td><?=$row['name']?> &raquo; <?=round($row['value'], 4)?></td>
@@ -186,15 +194,27 @@
         $diags = array();    
         foreach($best['arr'] as $val){
             $diags[] =  $DIAGNOSA[$val];
+            $diagnosa_akhir = $DIAGNOSA[$val];
         }  
+
+                // echo "<pre>";
+                // var_dump($best);
+                // echo "</pre>";
+
 
                 //proses simpan hasil df dsini
                 //perbaiki ya...aku ngantuk
                 //bagusnya buatkan tabel hasil df dan simpan kesitu
         $user = $this->session->userdata('id_user');
-        $in = $this->db->query("INSERT INTO tb_hasilds (id_user, kd_penyakit, nama_penyakit, kepercayaan) VALUES(".$user.", 'P007', 'ini hasil df', ".round($best['value'] * 100)." ) ");
-        ?>
 
+        foreach ($best['arr'] as $key => $v) {
+                $diagnosa_akhir = implode(', ', $diags);
+                $hasil_kepercayaan = round($best['value'] * 100);
+                $in = $this->db->query("INSERT INTO tb_hasilds (id_user, kd_penyakit, nama_penyakit, kepercayaan) VALUES(".$user.", '".$v."', '".$diagnosa_akhir."', ".$hasil_kepercayaan." ) ");
+            // $pen=  "'" . str_replace(",", "','", $value['name']) . "'";
+           
+        }
+        ?>
     </div>
     <div class="box box-success" style="background: #ffffff; height: auto;">
         <div class="box-header with-border">
