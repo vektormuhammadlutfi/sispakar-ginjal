@@ -109,8 +109,8 @@
 							<li class="menu_item menu_mm"><a href="<?php echo site_url() ?>/dashboard/index">Beranda</a></li>
 							<li class="menu_item menu_mm"><a href="<?php echo site_url() ?>/dashboard/informasi">Informasi</a></li>
 							<li class="menu_item menu_mm"><a href="<?php echo site_url() ?>/dashboard/tentang">Tentang</a></li>
-							<li class="menu_item menu_mm"><a href="<?php echo site_url() ?>/dashboard/diagnosa">Diagnosa CF</a></li>
-							<li class="menu_item menu_mm"><a href="<?php echo site_url() ?>/hitung">Diagnosa DS</a></li>
+							<li class="menu_item menu_mm"><a href="<?php echo site_url() ?>/dashboard/diagnosa">Diagnosa</a></li>
+							<!-- <li class="menu_item menu_mm"><a href="<?php echo site_url() ?>/hitung">Diagnosa DS</a></li> -->
 							<?php 
 							if($this->session->userdata('is_login') == TRUE && $this->session->userdata('level') == 'pasien'){
 								?>
