@@ -91,7 +91,7 @@ class Dashboard extends CI_Controller {
 
 			function cmp($a, $b)
 			{
-				return ($a["kepercayaan"] > $b["kepercayaan"]) ? -1 : 1;
+				return ($a["hasilcf"] > $b["hasilcf"]) ? -1 : 1;
 			}
 			usort($penyakit, "cmp");
 			$data["listPenyakit"] = $penyakit;
@@ -99,7 +99,7 @@ class Dashboard extends CI_Controller {
 				'id_user'=>$penyakit[0]['id_user'],
 				'kd_penyakit'=>$penyakit[0]['kd_penyakit'],
 				'nama_penyakit'=>$penyakit[0]['nama'],
-				'kepercayaan'=>$penyakit[0]['kepercayaan'],
+				'kepercayaan'=>$penyakit[0]['hasilcf'],
 			);
 
 			$DIAGNOSA = $this->diagnosa_model->tampil(); 

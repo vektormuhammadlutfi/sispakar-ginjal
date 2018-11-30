@@ -1,10 +1,10 @@
 <section id="kontak" class="call-to-action-area section-gap " style="background-image: -webkit-linear-gradient(0deg, #ffffff 0%, #ffffff 100%) !important; padding-top: 15%" >
-  <div class="container">
+  <div class="container" style="background: #F5F7FA">
     <?php echo form_open()?>
-    <div class="row d-flex justify-content-center">
+    <div class="row d-flex justify-content-center" style="background: #F5F7FA">
       <div class="menu-content pb-60 col-lg-6">
         <div class="title text-center">
-          <h3 style="margin-bottom: 0px; color: #283290;"><br>Diagnosa Certainty Factor dan Dempster Shafer</h3><br>
+          <h3 style="margin-bottom: 0px; color: #283290;"><br><b>Diagnosa Certainty Factor dan Dempster Shafer</b></h3><br>
           <p style="color: #283290;">Silahkan pilih gejala yang dirasakan...</p><br>
         </div>
       </div>
@@ -28,7 +28,7 @@
       <div class="col-md-6" style="float: left; padding-bottom: 5%;">
         <input type="checkbox" name="allbox" value="check" onclick="checkAll(0);" /><span style="color: #000000;">Centang semua</span>
         <br><br>
-        <button type="submit" name="submit" class="btn btn-primary"><span class="fa fa-send"></span>Proses</button>
+        <button type="submit" name="submit" class="btn btn-primary" style="background: #283290;"><span class="fa fa-send"></span>Proses</button>
       </div>
     </div>
   </div>

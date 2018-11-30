@@ -1,8 +1,8 @@
-<div class="content" style="margin-top: 17%; margin-right: 5%; margin-left: 5%" id="printTable">
-    <h3 style="text-align: center; color: #283290;">Hasil Analisis CF</h3>
+<div class="content" style="background: #283290; margin-top: 17%; margin-right: 5%; margin-left: 5%" id="printTable">
+    <h3 style="text-align: center; color: #FFFFFF;">Hasil Analisis CF</h3>
     <div class="box box-warning" style="background: #ffffff; height: auto;">
         <div class="box-header with-border">
-            <h6 class="box-title"><b>Gejala yang dipilih</b></h6>
+            <h6 class="box-title" style="color: #20D34A;"><b>Gejala yang dipilih</b></h6>
         </div><!-- /.box-header -->
         <div class="box-body table-responsive">
             <table id="tbl-list" class="table table-bordered table-striped">
@@ -20,10 +20,10 @@
                 </tr>
             </table>
         </div><!--box body-->
-    </div><!--box-->
+    </div><br><!--box-->
     <div class="box box-success" style="background: #ffffff; height: auto;">
         <div class="box-header with-border">
-            <h6 class="box-title"><b>Hasil Diagnosa</b></h6>
+            <h6 class="box-title" style="color: #20D34A;"><b>Hasil Diagnosa</b></h6>
         </div><!-- /.box-header -->
         <div class="box-body">
             <table id="tbl-list" class="table table-bordered table-striped">
@@ -51,7 +51,7 @@
 
     <div class="box box-success" style="background: #ffffff; height: auto;">
         <div class="box-header with-border">
-            <h3 class="box-title">Kesimpulan</h3>
+            <h3 class="box-title" style="color: #20D34A;">Kesimpulan</h3>
             <hr style="width: 10%;">
         </div><!-- /.box-header -->
         <div class="box-body"  style="text-align: justify; padding-right: 2%;">
@@ -78,10 +78,10 @@
         $this->session->set_userdata('gejala', $selected);
         ?>
         <div class="content" style="margin-top: 5%;" id="printTable">
-            <h3 style="text-align: center; color: #283290;">Hasil Analisis DS</h3>
+            <h3 style="text-align: center; color: #FFFFFF;">Hasil Analisis DS</h3>
             <div class="box box-warning" style="background: #ffffff; height: auto;">
                 <div class="box-header with-border">
-                    <h6 class="box-title"><b>Gejala yang dipilih</b></h6>
+                    <h6 class="box-title" style="color: #20D34A;"><b>Gejala yang dipilih</b></h6>
                 </div><!-- /.box-header -->
                 <div class="box-body table-responsive">
                     <table class="table table-bordered table-hover table-striped">
@@ -198,7 +198,7 @@
     </div>
     <div class="box box-success" style="background: #ffffff; height: auto;">
         <div class="box-header with-border">
-            <h3 class="box-title">Kesimpulan</h3>
+            <h3 class="box-title" style="color: #20D34A;">Kesimpulan</h3>
         </div><!-- /.box-header -->
         <div class="panel-body" style="text-align: justify; padding-right: 2%;">
             <b>Nama Pengunjung : <?php echo $this->session->userdata('nama_pengguna') ?>
@@ -211,8 +211,8 @@
 </div><!--box-->
 </div> <!-- content -->
 <div class="box-footer clearfix" style="padding-bottom: 3%; padding-left: 5%;"><br>
-    <a class="btn btn-sm btn-primary" href="<?php echo site_url() ?>/dashboard/diagnosa"><span class="fa fa-refresh">Konsultasi Lagi</a>
-        <button class="btn btn-sm btn-primary btn-flat" onclick >Cetak</button>
+    <a class="btn btn-sm btn-primary" href="<?php echo site_url() ?>/dashboard/diagnosa" style="background: #283290;"><span class="fa fa-refresh"><b> Konsultasi Lagi</b></a>
+        <button style="background: #283290;" class="btn btn-sm btn-primary btn-flat" onclick ><b>Cetak</b></button>
     </div>
 
     <script type="text/javascript">

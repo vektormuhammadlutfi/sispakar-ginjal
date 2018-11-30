@@ -71,7 +71,7 @@
 				<div class="box box_appointments">
 					<div class="box_icon d-flex flex-column align-items-start justify-content-center"><div style="width: 29px; height:29px;"><img src="<?php echo base_url()?>templates/caremed/images/milestone_3.svg" alt=""></div></div>
 					<div class="box_title">Pakar
-						<h4>dr. Amelia Rifai Sp.PD</h4></div>
+						<h4>dr. Melda Tessy Sp.PD KGH</h4></div>
 						<div class="box_text">pakar adalah seseorang yang memiliki keahlian tertentu pada bidang ilmu tertentu yang dapat memberikan suatu keputusan pada permasalahan tertentu.</div>
 					</div>
 
@@ -122,7 +122,7 @@
 							<div class="team_member_image d-flex flex-column align-items-center justify-content-end"><img src="<?php echo base_url()?>templates/caremed/images/team_1.png" alt=""></div>
 							<div class="team_member_info">
 								<div class="team_member_name"><a href="#">Dempster Shafer</a></div>
-								<div class="team_member_title"><p style="text-align: justify;">Metode dempster-shafer pertama kali diperkenalkan oleh Dempster, yang melakukan percobaan model ketidakpastian dengan range probabilities dari pada sebagai probabilitas tunggal. Pada tahun 1976 Shafer mempublikasikan teori Dempster pada sebuah buku yang berjudul Mathematical Theory Of Evident. Dempster-Shafer Theory Of Evidence, menunjukkan suatu cara untuk memberikan bobot keyakinan sesuai fakta yang dikumpulkan.</p>
+								<div class="team_member_title"><p style="text-align: justify;">Metode dempster-shafer pertama kali diperkenalkan oleh Dempster, yang melakukan percobaan model ketidakpastian dengan range probabilities dari probabilitas tunggal. Pada tahun 1976 Shafer mempublikasikan teori Dempster pada sebuah buku yang berjudul Mathematical Theory Of Evident. Dempster-Shafer Theory Of Evidence, menunjukkan suatu cara untuk memberikan bobot keyakinan sesuai fakta yang dikumpulkan.</p>
 									<p style="text-align: justify;">Secara umum teori Dempster-Shafer ditulis dalam suatu interval: [Belief,Plausibility]. Belief (Bel) adalah ukuran kekuatan evidence dalam mendukung suatu himpunan proposisi.</p></div>
 								</div>
 							</div>
