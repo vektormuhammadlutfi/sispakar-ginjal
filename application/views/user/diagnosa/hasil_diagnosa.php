@@ -198,7 +198,7 @@ $diagnosa_akhir = array();
         }  
 
                 // echo "<pre>";
-                // var_dump($best);
+                // var_dump($diags);
                 // echo "</pre>";
 
 
@@ -206,13 +206,13 @@ $diagnosa_akhir = array();
                 //perbaiki ya...aku ngantuk
                 //bagusnya buatkan tabel hasil df dan simpan kesitu
         $user = $this->session->userdata('id_user');
-
+        $k = 0;
         foreach ($best['arr'] as $key => $v) {
-                $diagnosa_akhir = implode(', ', $diags);
+                // $diagnosa_akhir = implode(', ', $diags);
+                $nm_penyakit = array_values($diags);
                 $hasil_kepercayaan = round($best['value'] * 100);
-                $in = $this->db->query("INSERT INTO tb_hasilds (id_user, kd_penyakit, nama_penyakit, kepercayaan) VALUES(".$user.", '".$v."', '".$diagnosa_akhir."', ".$hasil_kepercayaan." ) ");
+                $in = $this->db->query("INSERT INTO tb_hasilds (id_user, kd_penyakit, nama_penyakit, kepercayaan) VALUES(".$user.", '".$v."', '".$nm_penyakit[$k++]."', ".$hasil_kepercayaan." ) ");
             // $pen=  "'" . str_replace(",", "','", $value['name']) . "'";
-           
         }
         ?>
     </div>
