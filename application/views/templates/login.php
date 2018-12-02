@@ -33,7 +33,7 @@
   <body style="background: #ffffff;">
 
     <div class="container" >
-<?php echo form_open('login_admin/login'); ?>
+    <?php echo form_open('login_admin/login'); ?>
       <div class="login-form">        
         <div class="login-wrap">
             <p class="login-img"><i class="icon_lock_alt"></i></p>
@@ -52,7 +52,7 @@
             <button class="btn btn-primary btn-lg btn-block" type="submit" name="submit">Masuk</button>
         </div>
       </div>
-<?php echo form_close(''); ?>
+    <?php echo form_close(''); ?>
     </div>
   </body>
 </html>

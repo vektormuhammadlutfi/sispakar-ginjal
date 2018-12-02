@@ -4,25 +4,34 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Regist_model extends CI_Model {
 
 	
-	public function insert(){
+	public function insert($kode){
+		$username = $this->input->post('username');
+		$password = md5($this->input->post('password'));
 		$nama_pengguna = $this->input->post('nama_pengguna');
 		$jk = $this->input->post('jk');
 		$umur = $this->input->post('umur');
 		$alamat = $this->input->post('alamat');
-		$username = $this->input->post('username');
-		$password = md5($this->input->post('password'));
+		$email = $this->input->post('email');
 		
 	
 	$data = array(
+					'username'=>$username,
+					'password'=>$password,
 					'nama_pengguna'=>$nama_pengguna,
 					'jk'=>$jk,
 					'umur'=>$umur,
 					'alamat'=>$alamat,
-					'username'=>$username,
-					'password'=>$password,
-					'level' => 'pasien'
+					'email'=>$email,
+					'level' => 'pasien',
+					'kode_verifikasi' => $kode,
+					'status' => 0
 			);
 	$this->db->insert('tb_user', $data);
+	return $this->db->insert_id();
 	
+	}
+
+	function getEmail($id){
+		return $this->db->get_where('tb_user', array('id'=>$id))->row();
 	}
 }

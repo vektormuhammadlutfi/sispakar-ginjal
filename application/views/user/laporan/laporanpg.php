@@ -13,6 +13,7 @@
 	                        <th>Jenis Kelamin</th>
 	                        <th>Usia</th>
 	                        <th>Alamat</th>
+	                        <th>Email</th>
 	                        <th>Username</th>
 						</tr>
 					</thead>
@@ -24,6 +25,7 @@
 							<td><?php echo $list->jk ?> </td>
 							<td><?php echo $list->umur ?> </td>
 							<td><?php echo $list->alamat ?> </td>
+							<td><?php echo $list->email ?> </td>
 							<td><?php echo $list->username ?> </td>
 						</tr>
 						<?php endforeach ?>

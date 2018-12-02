@@ -40,15 +40,21 @@
                                         </div>
                                     </div>
                                     <div class="form-group ">
-                                        <label for="umur" class="control-label col-lg-2">Umur<span class="required">*</span></label>
+                                        <label for="umur" class="control-label col-lg-2">Tanggal Lahir<span class="required">*</span></label>
                                         <div class="col-lg-10">
-                                            <input class="form-control " id="umur" type="text" name="umur" required />
+                                            <input class="form-control " id="umur" type="date" name="umur" required />
                                         </div>
                                     </div>
                                     <div class="form-group ">
                                         <label for="alamat" class="control-label col-lg-2">Alamat<span class="required">*</span></label>
                                         <div class="col-lg-10">
                                             <input class="form-control " id="alamat" type="text" name="alamat" required />
+                                        </div>
+                                    </div>
+                                    <div class="form-group ">
+                                        <label for="email" class="control-label col-lg-2">Email<span class="required">*</span></label>
+                                        <div class="col-lg-10">
+                                            <input class="form-control " id="email" type="email" name="email" required />
                                         </div>
                                     </div>
                                     <div class="form-group ">
@@ -70,6 +76,16 @@
                                               <option value="">-Pilih-</option>
                                               <option value="admin">Admin</option>
                                               <option value="pasien">Pasien</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group ">
+                                        <label for="status" class="control-label col-lg-2">Status<span class="required">*</span></label>
+                                        <div class="col-lg-10">
+                                            <select class="form-control" name="status" id="status">
+                                              <option value="">-Pilih-</option>
+                                              <option value="1">Aktif</option>
+                                              <option value="0">Tidak Aktif</option>
                                             </select>
                                         </div>
                                     </div>

@@ -30,54 +30,60 @@
 
 </head>
 <body style="margin-top:15%;">
-	<div class="limiter">
-		<div class="container-login100" style="background: #f5f7fa;" >
-			<div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-50">
+	<div class="container" style="padding-left: 25%;">
+		<div class="col-md-8" >
+			<div class="panel-body">
+                <div class="form" style="padding-top: 10px;">
 				<?php echo form_open('regist_user/create'); ?>
-				<form class="login100-form validate-form">
-					<span class="login100-form-title p-b-33">
-						Silahkan Registrasi
-					</span>
-					<div class="wrap-input100 validate-input" data-validate = "Valid nama is required: ex@abc.xyz">
-						<input class="input100" type="text" name="nama_pengguna" placeholder="Nama Lengkap" required/>
+				<form class="form-validate form-horizontal">
+					<h3 class="form-signin-heading">
+						<center><span class="fa fa-user"></span> Silahkan Registrasi</center>
+					</h3>
+					<div class="form-group" style="padding-top: 10px;">
+						<h5><span style="color: red;">*</span> Nama Lengkap : </h5>
+						<input class="form-control" style="color: grey;" type="text" name="nama_pengguna" placeholder="Nama Anda" required/>
 					</div>
-					<div class="wrap-input100 validate-input" data-validate = "Valid jk is required: ex@abc.xyz">
-						<select name="jk" id="jk" style="height: 68px; padding: 0 25px 0 25px; display: block;
-						width: 100%;
-						background: transparent;
-						font-family: OpenSans-Regular;
-						font-size: 15px;
-						color: #666666;
-						line-height: 1.2; outline: none;
-						border: none;" required/>
-						<option value="">-Jenis Kelamin-</option>
-						<option value="P">Perempuan</option>
-						<option value="L">Laki-Laki</option>
-					</select>
-				</div>
-				<div class="wrap-input100 validate-input" data-validate = "Valid umur is required: ex@abc.xyz">
-					<input class="input100" type="text" name="umur" placeholder="Usia" required/>
-				</div>
-				<div class="wrap-input100 validate-input" data-validate = "Valid alamat is required: ex@abc.xyz">
-					<input class="input100" type="text" name="alamat" placeholder="Alamat" required/ >
-				</div>
-				<div class="wrap-input100 validate-input" data-validate = "Valid username is required: ex@abc.xyz">
-					<input class="input100" type="text" name="username" placeholder="Username" required/ >
-				</div>
-				<div class="wrap-input100 rs1 validate-input" data-validate="Password is required">
-					<input class="input100" type="password" name="password" placeholder="Password" required/>
-				</div>
+					<div class="form-group">
+						<h5><span style="color: red;">*</span> Jenis Kelamin : </h5>
+						<select name="jk" id="jk" class="form-control" style="color: grey;" required/>
+							<option value="">Jenis Kelamin</option>
+							<option value="P">Perempuan</option>
+							<option value="L">Laki-Laki</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<h5><span style="color: red;">*</span> Tanggal Lahir : </h5>
+						<input class="form-control" style="color: grey;" type="date" name="umur" required/>
+					</div>
+					<div class="form-group">
+						<h5><span style="color: red;">*</span> Alamat : </h5>
+						<input class="form-control" style="color: grey;" type="text" name="alamat" placeholder="Alamat" required/ >
+					</div>
+					<div class="form-group" >
+						<h5><span style="color: red;">*</span> Email : </h5>
+						<input class="form-control" style="color: grey;" type="email" name="email" placeholder="Email" required/ >
+					</div>
+					<div class="form-group">
+						<h5><span style="color: red;">*</span> Username : </h5>
+						<input class="form-control" style="color: grey;" type="text" name="username" placeholder="Username" required/ >
+					</div>
+					<div class="form-group">
+						<h5><span style="color: red;">*</span> Password : </h5>
+						<input class="form-control" style="color: grey;" type="password" name="password" placeholder="Password" required/>
+					</div>
 
-				<div class="container-login100-form-btn m-t-20">
-					<button class="login100-form-btn" type="submit" name="submit">
-						Daftar
-					</button>
-				</div>
-			</form>
+					<div class="form-group">
+						<button class="form-control" type="submit" name="submit" style="color: #ffffff; background: #283290;">
+							Daftar
+						</button>
+					</div>
+				</form>
 			<?php echo form_close(''); ?>
+			</div>
 		</div>
 	</div>
 </div>
+</body>
 
 
 <!--===============================================================================================-->

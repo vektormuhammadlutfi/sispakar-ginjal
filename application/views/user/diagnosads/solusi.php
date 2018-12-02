@@ -184,8 +184,8 @@
                              </div>
                          </div>
                      </section>
-                     <button style="margin-left: 5%; margin-bottom: 5%;" class="btn btn-sm btn-primary btn-flat" onclick ><span class="fa fa-print"></span> Cetak</button>
-                     <a style="margin-bottom: 5%;" class="btn btn-sm btn-primary" href="<?=site_url('hitung')?>"><span class="fa fa-arrow-left"></span> Konsultasi Lagi</a>
+                     <button style="margin-left: 5%; margin-bottom: 5%; background: #283290;" class="btn btn-sm btn-primary btn-flat" onclick ><span class="fa fa-print"></span> Cetak</button>
+                     <a style="margin-bottom: 5%; background: #283290;" class="btn btn-sm btn-primary" href="<?=site_url('dashboard/diagnosa')?>"><span class="fa fa-refresh"></span> Konsultasi Lagi</a>
                  </section>
                  <!--main content end-->
 

@@ -5,8 +5,8 @@ $hasil_akhir = array();
 $diagnosa_akhir = array();
 
 ?>
-<div class="content" style="background: #283290; margin-top: 17%; margin-right: 5%; margin-left: 5%" id="printTable">
-    <h3 style="text-align: center; color: #FFFFFF;">Hasil Analisis CF</h3>
+<div class="content" style="background:#F5F7FA; margin-top: 17%; margin-right: 5%; margin-left: 5%">
+    <h3 style="text-align: center; color:#283290;">Hasil Analisis CF</h3>
     <div class="box box-warning" style="background: #ffffff; height: auto;">
         <div class="box-header with-border">
             <h6 class="box-title" style="color: #20D34A;"><b>Gejala yang dipilih</b></h6>
@@ -56,16 +56,17 @@ $diagnosa_akhir = array();
         </div><!--box body-->
     </div><!--box-->
 
-    <div class="box box-success" style="background: #ffffff; height: auto;">
+    <div class="box box-success" style="background: #ffffff; height: auto;" id="printTable">
         <div class="box-header with-border">
-            <h3 class="box-title" style="color: #20D34A;">Kesimpulan</h3>
+            <h3 class="box-title" style="color: #20D34A;">Kesimpulan Diagnosa CF</h3>
             <hr style="width: 10%;">
         </div><!-- /.box-header -->
         <div class="box-body"  style="text-align: justify; padding-right: 2%;">
             <?php if(sizeof($listPenyakit)>0) { ?>
             <p>
-                <b>Nama Pengunjung : <?php echo $this->session->userdata('nama_pengguna') ?>
-                </b><br>
+                <b>Nama Pasien : <?php echo $this->session->userdata('nama_pengguna') ?></b><br>
+                <b>Tanggal Lahir: <?php echo $this->session->userdata('umur') ?></b><br>
+                <br>
                 Berdasarkan gejala yang diinput, Anda di prediksi mengidap penyakit <b><?php echo $listPenyakit[0]['nama'];?></b> dengan tingkat kepercayaan nilai MB <b><?php echo $listPenyakit[0]['kepercayaan'];?> %</b> dikurang dengan tingkat ketidakpercayaan nilai MD <b><?php echo $listPenyakit[0]['tidakpercaya']; ?> % </b>maka hasil perhitungan CF sebesar <b><?php echo $listPenyakit[0]['hasilcf']; ?> %. </b> <br/></p>
                 <p><h4>
                     Solusi
@@ -78,14 +79,16 @@ $diagnosa_akhir = array();
                 </p>
                 <?php }?>
                 <hr>
-            </div>
         </div>
+    </div><br>
+    <a class="btn btn-sm btn-default"  style="background: #283290; color:#ffffff; " href="javascript:printDiv('printTable');"><span class="fa fa-print"></span> Cetak</a><br>
+
         <?php
         $selected = (array) $_POST['gejala'];
         $this->session->set_userdata('gejala', $selected);
         ?>
-        <div class="content" style="margin-top: 5%;" id="printTable">
-            <h3 style="text-align: center; color: #FFFFFF;">Hasil Analisis DS</h3>
+        <div class="content" style="margin-top: 5%;">
+            <h3 style="text-align: center; color: #283290;">Hasil Analisis DS</h3>
             <div class="box box-warning" style="background: #ffffff; height: auto;">
                 <div class="box-header with-border">
                     <h6 class="box-title" style="color: #20D34A;"><b>Gejala yang dipilih</b></h6>
@@ -205,6 +208,7 @@ $diagnosa_akhir = array();
                 //proses simpan hasil df dsini
                 //perbaiki ya...aku ngantuk
                 //bagusnya buatkan tabel hasil df dan simpan kesitu
+                //siyappppp
         $user = $this->session->userdata('id_user');
         $k = 0;
         foreach ($best['arr'] as $key => $v) {
@@ -216,23 +220,25 @@ $diagnosa_akhir = array();
         }
         ?>
     </div>
-    <div class="box box-success" style="background: #ffffff; height: auto;">
+    <div class="box box-success" style="background: #ffffff; height: auto;" id="elementId">
         <div class="box-header with-border">
-            <h3 class="box-title" style="color: #20D34A;">Kesimpulan</h3>
+            <h3 class="box-title" style="color: #20D34A;">Kesimpulan Diagnosa DS</h3>
         </div><!-- /.box-header -->
         <div class="panel-body" style="text-align: justify; padding-right: 2%;">
-            <b>Nama Pengunjung : <?php echo $this->session->userdata('nama_pengguna') ?>
-            </b><br>
+            <strong>Nama Pasien : <?php echo $this->session->userdata('nama_pengguna') ?></strong><br>
+            <strong>Tanggal Lahir: <?php echo $this->session->userdata('umur') ?></strong><br>
+            <br>
             <p>Berdasarkan gejala yang terpilih maka anda di prediksi mengidap penyakit dengan diagnosa paling akurat adalah <strong><?=implode(', ', $diags)?></strong> dengan tingkat kepercayaan <strong><?=round($best['value'] * 100) ?>%</strong> klik untuk<a href="<?=site_url('hitung/solusi')?>" style="color: #696969;"><b> Solusi Umum Penyakit</b></a>.</p>
-            <p style="color: red;">*Sistem pakar hanya memberikan solusi secara umum pada tahap awal penyakit !</p>
+            <p style="color: red;">*Sistem pakar hanya memberikan solusi secara umum pada tahap awal penyakit !</p><br>
         </div>
-    </div>
+    </div><br>
+    <a class="btn btn-sm btn-default"  style="background: #283290; color:#ffffff;" href="javascript:printDiv('elementId');"><span class="fa fa-print"></span> Cetak</a><br><br>
 </div><!--box body-->
 </div><!--box-->
 </div> <!-- content -->
 <div class="box-footer clearfix" style="padding-bottom: 3%; padding-left: 5%;"><br>
-    <a class="btn btn-sm btn-primary" href="<?php echo site_url() ?>/dashboard/diagnosa" style="background: #283290;"><span class="fa fa-refresh"><b> Konsultasi Lagi</b></a>
-        <button style="background: #283290;" class="btn btn-sm btn-primary btn-flat" onclick ><b>Cetak</b></button>
+    <a class="btn btn-sm btn-default" href="<?php echo site_url() ?>/dashboard/diagnosa" style="background: #283290; color:#ffffff;"><span class="fa fa-refresh"><b> Konsultasi Lagi</b></a>
+    <!-- <button style="background: #283290;" class="btn btn-sm btn-primary btn-flat" onclick ><b>Cetak</b></button> -->
     </div>
 
     <script type="text/javascript">

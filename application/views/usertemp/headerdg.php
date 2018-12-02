@@ -17,6 +17,19 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url()?>templates/caremed/styles/responsive.css">
 	<script type='text/javascript' src='<?php echo base_url();?>asset/assets/js/jquery-1.8.2.min.js'></script>
 </head>
+
+<textarea id="printing-css" style="display:none;">.no-print{display:none}</textarea>
+<iframe id="printing-frame" name="print_frame" src="about:blank" style="display:none;"></iframe>
+<script type="text/javascript">
+function printDiv(elementId) {
+ var a = document.getElementById('printing-css').value;
+ var b = document.getElementById(elementId).innerHTML;
+ window.frames["print_frame"].document.title = document.title;
+ window.frames["print_frame"].document.body.innerHTML = '<style>' + a + '</style>' + b;
+ window.frames["print_frame"].window.focus();
+ window.frames["print_frame"].window.print();
+}
+</script>
 <body>
 
 	<div class="super_container">

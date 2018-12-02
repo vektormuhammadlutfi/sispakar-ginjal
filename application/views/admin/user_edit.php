@@ -44,15 +44,21 @@
                                           </div>
                                       </div>
                                       <div class="form-group ">
-                                          <label for="umur" class="control-label col-lg-2">Usia</label>
+                                          <label for="umur" class="control-label col-lg-2">Tanggal Lahir</label>
                                           <div class="col-lg-10">
-                                              <input class="form-control " id="umur" type="text" name="umur" value="<?php echo $user['umur'] ?>" required />
+                                              <input class="form-control " id="umur" type="date" name="umur" value="<?php echo $user['umur'] ?>" required />
                                           </div>
                                       </div>
                                       <div class="form-group ">
                                           <label for="alamat" class="control-label col-lg-2">Alamat</label>
                                           <div class="col-lg-10">
                                               <input class="form-control " id="alamat" type="text" name="alamat" value="<?php echo $user['alamat'] ?>" required />
+                                          </div>
+                                      </div>
+                                      <div class="form-group ">
+                                          <label for="email" class="control-label col-lg-2">Email</label>
+                                          <div class="col-lg-10">
+                                              <input class="form-control " id="email" type="email" name="email" value="<?php echo $user['email'] ?>" required />
                                           </div>
                                       </div>
                                       <div class="form-group ">
@@ -74,6 +80,16 @@
                                                 <option value=""><?php echo $user['level'] ?></option>
                                                 <option value="admin">Admin</option>
                                                 <option value="pasien">Pasien</option>
+                                              </select>
+                                          </div>
+                                      </div>
+                                      <div class="form-group ">
+                                          <label for="status" class="control-label col-lg-2">Status Aktif</label>
+                                          <div class="col-lg-10">
+                                              <select class="form-control" name="status" id="status" required>
+                                                <option value=""><?php echo $user['status'] ?></option>
+                                                <option value="1">Aktif</option>
+                                                <option value="0">Tidak Aktif</option>
                                               </select>
                                           </div>
                                       </div>
